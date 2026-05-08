@@ -1,0 +1,258 @@
+body, ul, li, h1, h2, a{
+  
+  /* Insert a margin property and set it's value to 0 */
+  /* Insert a padding property and set it's value to 0 */
+  /* Insert a font-family property and set it's value to tahoma
+  font-family: tahoma;
+}
+p{
+  /* Insert a font-size property and set it's value to 18px */
+}
+header{
+  background-color: #F63232;
+  padding: 20px 0;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+header h1{
+  /* Insert a color property and set it's value to white  */
+  /* Insert a border property and set it's value to 8px solid white  */
+  /* Insert a display property and set it's value to inline-block  */
+  /* Insert a padding property and set it's value to 6px and 12px  */
+  /* Insert a border-radius property and set it's value to 36px */
+}
+.banner{
+  position: relative;
+}
+.banner img{
+  max-width: 100%;
+}
+.banner .welcome{
+  background:#FEB614;
+  color: white;
+  padding: 30px;
+  font-size: 60px;
+  position: absolute;
+  left: 0;
+  top: 30%;
+} 
+.banner .welcome span{
+  /* Insert a font-size property and set it's value to 1.4em */
+}
+nav{
+  background: #F4F4F4;
+  padding: 20px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 106px;
+  z-index: 1;
+}
+nav ul{
+  white-space: nowrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+nav li{
+  width: 25%;
+  display: inline-block;
+  font-size: 24px;
+}
+nav li a{
+  text-decoration: none;
+  color: #4B4B4B;
+}
+nav li a:hover{
+  /* Insert a text-decoration property and set it's value to underline */
+}
+nav li a.join{
+  color: #F63232;
+}
+main{
+  max-width: 100%;
+  width: 1200px;
+  margin: 80px auto;
+  padding: 0 40px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+article h2{
+  /* Insert a color property and set it's value to #F63232  */
+  /* Insert a font-size property and set it's value to 48px */
+  font-size: 48px;
+}
+article p{
+  line-height: 2em;
+  color: #4B4B4B;
+}
+article p::first-line{
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.images{
+  text-align: center;
+  margin: 80px 0;
+  white-space: nowrap;
+}
+.images li{
+  display: inline-block;
+  list-style-type: none;
+  width: 40%;
+  margin: 20px 5%;
+  position: relative;
+}
+.images li:hover{
+  top: -4px;
+}
+.images li img{
+  max-width: 100%;
+}
+.images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.coverimage li {
+  -webkit-box-flex: 1;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  margin: 5px;
+  height: 100px;
+}
+section.join{
+  background: #F4F4F4;
+  text-align: center;
+  padding: 60px 20px;
+  color: #4B4B4B;
+}
+section.join h2{
+  font-size: 36px;
+}
+form {
+  /* Insert a padding-left property with following value: 1.5rem */
+  /* Insert a pading-top property with following value: 6rem */
+    padding-left: 1.5rem;
+    padding-top: 6rem;
+}
+form input{
+  /* Insert a margin property and set it's value to 20px and 0  */
+  /* Insert a padding property and set it's value to 10px and 20px */ 
+  /* Insert a font-size property and set it's value to 24px */
+  /* Insert a border-radius property and set it's value to 28px */ 
+  /* Insert a border property and set it's value to 4px solid and white */
+}
+form textarea{
+  margin: 20px 0;
+  padding: 10px 20px;
+  font-size: 24px;
+  border-radius: 28px;
+  border: 4px solid black;
+}
+form input:focus{
+  /* Insert a border property with following values: 4px dashed #4B4B4B */
+  /* Insert a outline property with following values: none */
+}
+form textarea:focus{
+  border: 4px dashed #4B4B4B;
+  outline: none;
+}
+form input:valid{
+  border: 4px solid #71d300;
+}
+input[type="submit"] {
+  /* Insert a width property with following value: 39rem */
+  /* Insert a background-color property with following value: red */
+  /* Insert a font-size property with following value: xx-large */
+  /* Insert a color property with following value: ghostwhite */
+    color: ghostwhite;
+}
+input[type="submit"]:focus {
+    border: 4px dashed ghostwhite;
+    outline: none
+}
+footer{
+  background: #F63232;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+/* responsive styles */
+
+@media screen and (max-width: 1400px){
+
+  .banner .welcome{
+    font-size: 40px;
+  }
+
+}
+
+@media screen and (max-width: 960px){
+
+  .banner .welcome{
+    font-size: 28px;
+  }
+  nav li{
+    font-size: 18px;
+  }
+
+}
+
+@media screen and (max-width: 700px){
+
+  .banner .welcome{
+    font-size: 20px;
+    position: relative;
+    text-align: center;
+  }
+  .banner .welcome br{
+    display: none;
+  }
+  .banner .welcome span{
+    font-size: 1em;
+  }
+  nav li{
+    font-size: 18px;
+  }
+  .images li{
+    width: 100%;
+    display: block;
+    margin: 20px auto;
+  }
+
+}
+
+@media screen and (max-width: 560px){
+
+  .banner .welcome{
+    font-size: 20px;
+    position: relative;
+    text-align: center;
+  }
+  .banner .welcome br{
+    display: none;
+  }
+  .banner .welcome span{
+    font-size: 1em;
+  }
+  nav li{
+    display: block;
+    width: 100%;
+    margin: 12px 0;
+  }
+  article h2{
+    font-size: 36px;
+  }
+  header, nav{
+    position: relative;
+    top: 0;
+  }
+  
+
+}
