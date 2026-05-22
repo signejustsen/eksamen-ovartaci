@@ -44,6 +44,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: var(--color-cream);
   }
   
   .phone {
@@ -54,6 +55,7 @@ html, body {
     overflow: hidden;
     background: var(--color-burgundy);
     position: relative;
+    
   }
   
   /* På mobil: fyld hele skærmen */
