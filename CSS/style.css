@@ -145,3 +145,56 @@ html, body {
 
 
 /* Sofie css */
+
+
+.valg-side h1 {
+  font-size: var(--text-title);
+  text-align: center;
+  margin: 34px 0 210px;
+}
+
+.valg-side h2 {
+  font-size: var(--text-mediumtitle);
+  text-align: center;
+ }
+
+.valg-side .choice-buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+}
+
+.valg-side .choice-button {
+  width: 100%;
+  height: 76px;
+  background-color: var(--color-pale-yellow);
+  color: var(--color-burgundy);
+  border-radius: 7px;
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  align-items: center;
+  
+
+  padding: 0 18px;
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.valg-side .icon {
+  color: black;
+  font-size: 42px;
+  line-height: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.valg-side .choice-button span:last-child {
+  justify-self: end;
+  white-space: nowrap;
+}
+
