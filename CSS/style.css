@@ -12,6 +12,7 @@
   --color-brown: #824916;
   --color-mauve: #B59494;
   --color-pale-yellow: #E7E7B0;
+  --color-white: #FFFFFF;
 
 
   /* =========================
@@ -25,14 +26,47 @@
      TEKSTSTØRRELSER
   ========================= */
 
-  --text-small: 0.75rem;   /* små tekster */
-  --text-body: 1rem;       /* brødtekst */
-  --text-medium: 1.5rem;   /* underoverskrifter */
-  --text-large: 3rem;      /* store titler */
+  --text-button: 24px;   /* lille tekst til knap */
+  --text-button: 35px;   /* almindelig tekst til knap */
+  --text-bodytext: 25px;      /* brødtekst */
+  --text-mediumtitle: 30px;   /* underoverskrifter */
+  --text-title: 40px;      /* store titler */
 }
 
+ /* =====================================
+     LAYOUT - MOBIL STØRRELSE IPHONE 17
+  ===================================== */
 
-
+html, body {
+    margin: 0;
+    min-height: 100%;
+    background: var(--color-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .phone {
+    width: 402px;
+    height: 874px;
+    max-width: 100vw;
+    max-height: 100dvh;
+    overflow: hidden;
+    background: var(--color-burgundy);
+    position: relative;
+  }
+  
+  /* På mobil: fyld hele skærmen */
+  @media (max-width: 500px) {
+    body {
+      display: block;
+    }
+  
+    .phone {
+      width: 100vw;
+      height: 100dvh;
+    }
+  }
 
 
 /* Paula css */
