@@ -1,0 +1,47 @@
+
+
+/* Roots */
+:root {
+  /* =========================
+     FARVER
+  ========================= */
+
+  /* Farver til layout */
+  --color-burgundy: #5F1722;
+  --color-cream: #FBE6BC;
+  --color-brown: #824916;
+  --color-mauve: #B59494;
+  --color-pale-yellow: #E7E7B0;
+
+
+  /* =========================
+     TYPOGRAFI
+  ========================= */
+
+  --font-heading: "Merriweather", serif;
+  --font-body: "Merriweather Sans", sans-serif;
+
+ /* =========================
+     TEKSTSTØRRELSER
+  ========================= */
+
+  --text-small: 0.75rem;   /* små tekster */
+  --text-body: 1rem;       /* brødtekst */
+  --text-medium: 1.5rem;   /* underoverskrifter */
+  --text-large: 3rem;      /* store titler */
+}
+
+
+
+
+
+/* Paula css */
+
+
+/* Signe css */
+
+
+/* Maria css */
+
+
+/* Sofie css */
