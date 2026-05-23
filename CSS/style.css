@@ -30,7 +30,7 @@
   --text-buttonl: 35px;   /* almindelig tekst til knap */
   --text-bodytext: 20px;      /* brødtekst */
   --text-mediumtitle: 22px;   /* underoverskrifter */
-  --text-title: 40px;      /* store titler */
+  --text-title: 32px;      /* store titler */
 }
 
  /* =====================================
@@ -143,8 +143,9 @@ html, body {
 
 /* ------------------------------------------- Valg sider -----------------------------------------------------*/
 
-.valg-side {
 
+/* Valg side */
+.valg-side {
   padding-top: 10px;
   box-sizing: border-box;
 }
@@ -197,12 +198,14 @@ html, body {
   gap: 18px;
 }
 
+/* divider linje */
 .valg-side .divider span {
   height: 1px;
   flex: 1;
   background-color: var(--color-cream);
 }
 
+/* stjerne ikon */
 .valg-side .star-icon {
   width: 42px;
   height: 42px;
@@ -230,6 +233,7 @@ html, body {
   text-decoration: none;
 }
 
+/* knapper */
 .valg-side .choice-button {
   width: 100%;
   height: 60px;
@@ -273,8 +277,9 @@ html, body {
   margin-top: 85px;
 }
 
-/* Dit svar er gemt side */
+/*---------------------------------------------- Dit svar er gemt side -----------------------------------------------------*/
 
+/* gemt tekst */
 .saved-side {
   min-height: 100vh;
   background-color: var(--color-burgundy);
@@ -304,6 +309,7 @@ html, body {
   margin-bottom: 20px;
 }
 
+/* flueben ikon */
 .saved-side .check-circle span {
   font-size: 150px;
   line-height: 1;
@@ -348,9 +354,104 @@ html, body {
   font-size: var(--text-bodytext);
   
 
+/* slet understreg */
   text-decoration: none;
   box-sizing: border-box;
 }
 
+/*-------------------------------------------- Biblotek side ------------------------------------------------------------*/
 
+.phone.bibliotek-side {
+  background-image: url("../img/bogbaggrund.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.back-button {
+  position: absolute;
+  top: 28px;
+  left: 28px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--color-cream);
+  color: var(--color-burgundy);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+}
+
+
+.book-content h1 {
+  text-align: center;
+  font-size: var(--text-title);
+  letter-spacing: 4px;
+  margin: 0 0 10px;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.divider span {
+  flex: 1;
+  height: 1px;
+  background: #fff1d0;
+}
+
+.star-icon {
+  width: 36px;
+}
+
+.book-content {
+  padding: 130px 25px 30px;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  column-gap: 10px;
+  row-gap: 30px;
+  justify-content: center;
+  justify-items: center;
+}
+
+.book-card {
+  width: 120px;
+  text-decoration: none;
+  margin-bottom: 10px;
+  
+}
+
+.book-card img {
+  width: 100%;
+  display: block;
+}
+
+.ending-text {
+  text-align: center;
+  font-family: var(--text-bodytext);
+  font-size: var(--text-mediumtitle);
+  line-height: 1.3;
+  margin: 0 0 18px;
+}
+
+.end-button {
+  display: block;
+  width: 100%;
+  padding: 20px 0px;
+  background: var(--color-pale-yellow);
+  border-radius: 8px;
+  color: var(--color-burgundy);
+  text-align: center;
+  text-decoration: none;
+  font-size: var(--text-button);
+  font-family: var(--text-bodytext);
+}
 
