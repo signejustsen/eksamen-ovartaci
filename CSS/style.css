@@ -26,7 +26,7 @@
      TEKSTSTØRRELSER
   ========================= */
 
-  --text-button: 22px;   /* lille tekst til knap */
+  --text-button: 26px;   /* lille tekst til knap */
   --text-buttonl: 35px;   /* almindelig tekst til knap */
   --text-bodytext: 20px;      /* brødtekst */
   --text-mediumtitle: 22px;   /* underoverskrifter */
@@ -140,6 +140,9 @@ html, body {
 /* Sofie css */
 
 
+
+/* ------------------------------------------- Valg sider -----------------------------------------------------*/
+
 .valg-side {
 
   padding-top: 10px;
@@ -178,7 +181,7 @@ html, body {
 /* bog */
 .valg-side .book-img {
   display: block;
-  width: 110px;
+  width: 100px;
   height: auto;
   margin: 0 auto 38px;
 }
@@ -221,7 +224,7 @@ html, body {
   font-size: var(--text-button);
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 26px;
   padding: 0 51px;
   box-sizing: border-box;
 }
@@ -258,5 +261,12 @@ html, body {
   justify-self: end;
   white-space: nowrap;
 }
+
+/* rettelse af h1 identitet siden */
+
+.identitetside {
+  margin-top: 85px;
+}
+
 
 
