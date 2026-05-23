@@ -221,12 +221,13 @@ html, body {
 .valg-side .choice-buttons {
   width: 100%;
   font-family: var(--font-body);
-  font-size: var(--text-button);
+  font-size: var(--text-bodytext);
   display: flex;
   flex-direction: column;
   gap: 26px;
   padding: 0 51px;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 .valg-side .choice-button {
@@ -246,6 +247,10 @@ html, body {
   box-sizing: border-box;
   font-weight: 600;
   cursor: pointer;
+}
+
+.choice-button {
+  text-decoration: none;
 }
 
 /* ikon i knap */
@@ -340,7 +345,7 @@ html, body {
   justify-content: center;
 
   font-family: var(--font-body);
-  font-size: var(--text-buttonl));
+  font-size: var(--text-bodytext);
   
 
   text-decoration: none;
