@@ -26,10 +26,10 @@
      TEKSTSTØRRELSER
   ========================= */
 
-  --text-button: 24px;   /* lille tekst til knap */
-  --text-button: 35px;   /* almindelig tekst til knap */
-  --text-bodytext: 25px;      /* brødtekst */
-  --text-mediumtitle: 30px;   /* underoverskrifter */
+  --text-button: 22px;   /* lille tekst til knap */
+  --text-buttonl: 35px;   /* almindelig tekst til knap */
+  --text-bodytext: 20px;      /* brødtekst */
+  --text-mediumtitle: 22px;   /* underoverskrifter */
   --text-title: 40px;      /* store titler */
 }
 
@@ -87,14 +87,7 @@ html, body {
   }
   
   /* TRÆD IND I */
-  .forside-content h2 {
-    font-family: var(--font-heading);
-    font-size: var(--text-mediumtitle);
-    font-weight: 400;
-    line-height: 1.1;
   
-    margin-bottom: 24px;
-  }
   
   /* OVARTACIS INDRE BIBLIOTEK */
   .forside-content h1 {
@@ -147,54 +140,123 @@ html, body {
 /* Sofie css */
 
 
-.valg-side h1 {
-  font-size: var(--text-title);
-  text-align: center;
-  margin: 34px 0 210px;
-}
+.valg-side {
 
-.valg-side h2 {
-  font-size: var(--text-mediumtitle);
-  text-align: center;
- }
-
-.valg-side .choice-buttons {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 38px;
-}
-
-.valg-side .choice-button {
-  width: 100%;
-  height: 76px;
-  background-color: var(--color-pale-yellow);
-  color: var(--color-burgundy);
-  border-radius: 7px;
-  display: grid;
-  grid-template-columns: 60px 1fr;
-  align-items: center;
-  
-
-  padding: 0 18px;
-  font-size: 24px;
-  font-weight: 700;
-  cursor: pointer;
+  padding-top: 10px;
   box-sizing: border-box;
 }
 
-.valg-side .icon {
-  color: black;
-  font-size: 42px;
+/* tilbage-knap */
+.valg-side .tilbage {
+  position: absolute;
+  top: 32px;
+  left: 26px;
+
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+
+  background-color: var(--color-cream);
+  color: var(--color-burgundy);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-decoration: none;
+  font-size: 30px;
   line-height: 1;
+}
+
+/* titel */
+.valg-side h1 {
+  font-size: var(--text-title);
+  font-family: var(--font-heading);
+  text-align: center;
+}
+
+/* bog */
+.valg-side .book-img {
+  display: block;
+  width: 110px;
+  height: auto;
+  margin: 0 auto 38px;
+}
+
+/* stjerne + linjer */
+.valg-side .divider {
+  width: 80%;
+  margin: 0 auto 28px;
 
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 18px;
 }
 
-.valg-side .choice-button span:last-child {
+.valg-side .divider span {
+  height: 1px;
+  flex: 1;
+  background-color: var(--color-cream);
+}
+
+.valg-side .star-icon {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+}
+
+/* undertitel */
+.valg-side h2 {
+  font-size: var(--text-mediumtitle);
+  font-family: var(--font-body);
+  text-align: center;
+  margin: 0 0 44px;
+}
+
+/* knapper */
+.valg-side .choice-buttons {
+  width: 100%;
+  font-family: var(--font-body);
+  font-size: var(--text-button);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 51px;
+  box-sizing: border-box;
+}
+
+.valg-side .choice-button {
+  width: 100%;
+  height: 60px;
+
+  background-color: var(--color-pale-yellow);
+  color: var(--color-burgundy);
+  border: none;
+  border-radius: 7px;
+
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  align-items: center;
+
+  padding: 0 24px;
+  box-sizing: border-box;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ikon i knap */
+.valg-side .button-icon {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  justify-self: start;
+}
+
+/* tekst i knap */
+.valg-side .choice-button span {
   justify-self: end;
   white-space: nowrap;
 }
+
 
