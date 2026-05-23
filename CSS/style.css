@@ -455,3 +455,24 @@ html, body {
   font-family: var(--text-bodytext);
 }
 
+
+
+/* Animation for book cover images */
+
+.book-card img {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(3deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
