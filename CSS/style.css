@@ -268,5 +268,84 @@ html, body {
   margin-top: 85px;
 }
 
+/* Dit svar er gemt side */
+
+.saved-side {
+  min-height: 100vh;
+  background-color: var(--color-burgundy);
+  color: var(--color-cream);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 180px 58px 0;
+  box-sizing: border-box;
+}
+
+/* stor cirkel med flueben */
+.saved-side .check-circle {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+
+  background-color: var(--color-cream);
+  color: var(--color-burgundy);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 20px;
+}
+
+.saved-side .check-circle span {
+  font-size: 150px;
+  line-height: 1;
+  font-weight: 700;
+}
+
+/* tekst: Dit svar er gemt */
+.saved-side h1 {
+  font-family: var(--font-body);
+  font-size: var(--text-mediumtitle);
+  font-weight: 700;
+  text-align: center;
+
+ 
+}
+
+/* brødtekst */
+.saved-side p {
+  font-family: var(--font-body);
+  font-size: var(--text-bodytext);
+  line-height: 1.35;
+  text-align: center;
+
+
+}
+
+/* knap */
+.saved-side .saved-button {
+  width: 100%;
+  height: 60px;
+
+  background-color: var(--color-pale-yellow);
+  color: var(--color-burgundy);
+
+  border-radius: 7px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: var(--font-body);
+  font-size: var(--text-buttonl));
+  
+
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
 
 
