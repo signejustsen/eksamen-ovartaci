@@ -26,11 +26,11 @@
      TEKSTSTØRRELSER
   ========================= */
 
-  --text-button: 24px;   /* lille tekst til knap */
-  --text-button: 35px;   /* almindelig tekst til knap */
-  --text-bodytext: 25px;      /* brødtekst */
-  --text-mediumtitle: 30px;   /* underoverskrifter */
-  --text-title: 40px;      /* store titler */
+  --text-button: 26px;   /* lille tekst til knap */
+  --text-buttonl: 35px;   /* almindelig tekst til knap */
+  --text-bodytext: 20px;      /* brødtekst */
+  --text-mediumtitle: 22px;   /* underoverskrifter */
+  --text-title: 32px;      /* store titler */
 }
 
  /* =====================================
@@ -87,14 +87,7 @@ html, body {
   }
   
   /* TRÆD IND I */
-  .forside-content h2 {
-    font-family: var(--font-heading);
-    font-size: var(--text-mediumtitle);
-    font-weight: 400;
-    line-height: 1.1;
   
-    margin-bottom: 24px;
-  }
   
   /* OVARTACIS INDRE BIBLIOTEK */
   .forside-content h1 {
@@ -185,54 +178,339 @@ html, body {
 /* Sofie css */
 
 
-.valg-side h1 {
-  font-size: var(--text-title);
-  text-align: center;
-  margin: 34px 0 210px;
-}
 
-.valg-side h2 {
-  font-size: var(--text-mediumtitle);
-  text-align: center;
- }
+/* ------------------------------------------- Valg sider -----------------------------------------------------*/
 
-.valg-side .choice-buttons {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 38px;
-}
 
-.valg-side .choice-button {
-  width: 100%;
-  height: 76px;
-  background-color: var(--color-pale-yellow);
-  color: var(--color-burgundy);
-  border-radius: 7px;
-  display: grid;
-  grid-template-columns: 60px 1fr;
-  align-items: center;
-  
-
-  padding: 0 18px;
-  font-size: 24px;
-  font-weight: 700;
-  cursor: pointer;
+/* Valg side */
+.valg-side {
+  padding-top: 10px;
   box-sizing: border-box;
 }
 
-.valg-side .icon {
-  color: black;
-  font-size: 42px;
+/* tilbage-knap */
+.valg-side .tilbage {
+  position: absolute;
+  top: 32px;
+  left: 26px;
+
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+
+  background-color: var(--color-cream);
+  color: var(--color-burgundy);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-decoration: none;
+  font-size: 30px;
   line-height: 1;
+}
+
+/* titel */
+.valg-side h1 {
+  font-size: var(--text-title);
+  font-family: var(--font-heading);
+  text-align: center;
+}
+
+/* bog */
+.valg-side .book-img {
+  display: block;
+  width: 100px;
+  height: auto;
+  margin: 0 auto 38px;
+}
+
+/* stjerne + linjer */
+.valg-side .divider {
+  width: 80%;
+  margin: 0 auto 28px;
 
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 18px;
 }
 
-.valg-side .choice-button span:last-child {
+/* divider linje */
+.valg-side .divider span {
+  height: 1px;
+  flex: 1;
+  background-color: var(--color-cream);
+}
+
+/* stjerne ikon */
+.valg-side .star-icon {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+}
+
+/* undertitel */
+.valg-side h2 {
+  font-size: var(--text-mediumtitle);
+  font-family: var(--font-body);
+  text-align: center;
+  margin: 0 0 44px;
+}
+
+/* knapper */
+.valg-side .choice-buttons {
+  width: 100%;
+  font-family: var(--font-body);
+  font-size: var(--text-bodytext);
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  padding: 0 51px;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* knapper */
+.valg-side .choice-button {
+  width: 100%;
+  height: 60px;
+
+  background-color: var(--color-pale-yellow);
+  color: var(--color-burgundy);
+  border: none;
+  border-radius: 7px;
+
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  align-items: center;
+
+  padding: 0 24px;
+  box-sizing: border-box;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.choice-button {
+  text-decoration: none;
+}
+
+/* ikon i knap */
+.valg-side .button-icon {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  justify-self: start;
+}
+
+/* tekst i knap */
+.valg-side .choice-button span {
   justify-self: end;
   white-space: nowrap;
 }
 
+/* rettelse af h1 identitet siden */
+
+.identitetside {
+  margin-top: 85px;
+}
+
+/*---------------------------------------------- Dit svar er gemt side -----------------------------------------------------*/
+
+/* gemt tekst */
+.saved-side {
+  min-height: 100vh;
+  background-color: var(--color-burgundy);
+  color: var(--color-cream);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 180px 58px 0;
+  box-sizing: border-box;
+}
+
+/* stor cirkel med flueben */
+.saved-side .check-circle {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+
+  background-color: var(--color-cream);
+  color: var(--color-burgundy);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 20px;
+}
+
+/* flueben ikon */
+.saved-side .check-circle span {
+  font-size: 150px;
+  line-height: 1;
+  font-weight: 700;
+}
+
+/* tekst: Dit svar er gemt */
+.saved-side h1 {
+  font-family: var(--font-body);
+  font-size: var(--text-mediumtitle);
+  font-weight: 700;
+  text-align: center;
+
+ 
+}
+
+/* brødtekst */
+.saved-side p {
+  font-family: var(--font-body);
+  font-size: var(--text-bodytext);
+  line-height: 1.35;
+  text-align: center;
+
+
+}
+
+/* knap */
+.saved-side .saved-button {
+  width: 100%;
+  height: 60px;
+
+  background-color: var(--color-pale-yellow);
+  color: var(--color-burgundy);
+
+  border-radius: 7px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: var(--font-body);
+  font-size: var(--text-bodytext);
+  
+
+/* slet understreg */
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+/*-------------------------------------------- Biblotek side ------------------------------------------------------------*/
+
+.phone.bibliotek-side {
+  background-image: url("../img/bogbaggrund.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.back-button {
+  position: absolute;
+  top: 28px;
+  left: 28px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--color-cream);
+  color: var(--color-burgundy);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+}
+
+
+.book-content h1 {
+  text-align: center;
+  font-size: var(--text-title);
+  letter-spacing: 4px;
+  margin: 0 0 10px;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.divider span {
+  flex: 1;
+  height: 1px;
+  background: #fff1d0;
+}
+
+.star-icon {
+  width: 36px;
+}
+
+.book-content {
+  padding: 130px 25px 30px;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  column-gap: 10px;
+  row-gap: 30px;
+  justify-content: center;
+  justify-items: center;
+}
+
+.book-card {
+  width: 120px;
+  text-decoration: none;
+  margin-bottom: 10px;
+  
+}
+
+.book-card img {
+  width: 100%;
+  display: block;
+}
+
+.ending-text {
+  text-align: center;
+  font-family: var(--text-bodytext);
+  font-size: var(--text-mediumtitle);
+  line-height: 1.3;
+  margin: 0 0 18px;
+}
+
+.end-button {
+  display: block;
+  width: 100%;
+  padding: 20px 0px;
+  background: var(--color-pale-yellow);
+  border-radius: 8px;
+  color: var(--color-burgundy);
+  text-align: center;
+  text-decoration: none;
+  font-size: var(--text-button);
+  font-family: var(--text-bodytext);
+}
+
+
+
+/* Animation for book cover images */
+
+.book-card img {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(3deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
