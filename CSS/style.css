@@ -202,7 +202,10 @@ html, body {
   justify-content: center;
   text-align: center;
   width: 100%;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
+
 
 .tilbage {
   position: absolute;
@@ -223,15 +226,97 @@ html, body {
   margin: 0 auto 25px;
 }
 
-.svar-knapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 16px;
+.svar-knapper{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width:100%;
+}
+
+.svar-knapper button{
+    width:260px;
+    padding: 18px;
     border-radius: 5px;
+    color: var(--color-burgundy);
     font-size: var(--text-button);
     font-family: var(--font-heading);
-    color: var(--color-pale-yellow);  
+    background-color: var(--color-pale-yellow);  
+    display: flex;
+    margin: 15px;
+}
+
+.hoer-side .divider {
+  width: 80%;
+  margin: 0 auto 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+}
+
+.hoer-side .divider span {
+  height: 1px;
+  flex: 1;
+  background-color: var(--color-cream);
+}
+
+.hoer-body {
+  margin: 0;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.hoer-side {
+  width: 390px;
+  min-height: 844px;
+  background-color: var(--color-burgundy);
+  color: var(--color-pale-yellow);
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px;
+  box-sizing: border-box;
+}
+
+.hoer-side h1 {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-family: var(--font-heading);
+  font-size: var(--text-title);
+}
+
+
+.hoer-cirkel {
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  background-color: var(--color-pale-yellow);
+  display: grid;
+  place-items: center;
+  margin: 50px;
+}
+
+.hoer-cirkel img {
+  width: 110px;
+  height: auto;
+}
+
+.lydboelge {
+  color: var(--color-pale-yellow);
+  font-size: 46px;
+  letter-spacing: 5px;
+  margin-bottom: 62px;
+}
+
+.hoer-tekst {
+  max-width: 260px;
+  font-family: var(--font-body);
+  font-size: var(--text-bodytext);
+  line-height: 1.05;
 }
 .tilbage {
   position: absolute;
