@@ -1,9 +1,65 @@
+/* Afslutning side */
+.afslutning-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  padding-top: 60px;
+}
+.afslutning-tekst p {
+  color: var(--color-cream);
+  font-family: var(--font-heading);
+  font-size: 2.3rem;
+  text-align: center;
+  margin: 0 0 24px 0;
+  line-height: 1.2;
+}
+.afslutning-stjerner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  margin: 38px 0 38px 0;
+}
+.star-ikon.stor {
+  width: 60px;
+}
+.star-ikon.mellem {
+  width: 36px;
+}
+.star-ikon.lille {
+  width: 24px;
+}
+.afslutning-genstart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+.afslutning-genstart-tekst {
+  color: var(--color-cream);
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  margin-bottom: 18px;
+}
+.genstart-ikon-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.genstart-ikon {
+  width: 90px;
+  height: 90px;
+  display: block;
+}
 /* Identitetsside kort og knap */
 .identitet-card {
   background: var(--color-cream);
   border-radius: 16px;
   padding: 32px 18px 28px 18px;
-  margin: 36px 0 48px 0;
+  margin: 36px 24px 48px 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
