@@ -1,3 +1,131 @@
+/* Identitetsside kort og knap */
+.identitet-card {
+  background: var(--color-cream);
+  border-radius: 16px;
+  padding: 32px 18px 28px 18px;
+  margin: 36px 0 48px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.identitet-card-title {
+  color: var(--color-burgundy);
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  text-align: center;
+}
+.identitet-card-img {
+  width: 120px;
+  height: auto;
+  margin-bottom: 18px;
+}
+.identitet-card-text {
+  color: var(--color-burgundy);
+  font-family: var(--font-body);
+  font-size: 1.7rem;
+  text-align: center;
+  margin-top: 0;
+}
+.afslut-knap {
+  position: absolute;
+  left: 5%;
+  right: 5%;
+  bottom: 40px;
+  width: 90%;
+  max-width: 420px;
+  padding: 22px 0;
+  background: var(--color-pale-yellow);
+  color: var(--color-burgundy);
+  border-radius: 12px;
+  font-size: 2.5rem;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  transition: background 0.2s;
+  z-index: 10;
+}
+.afslut-knap:hover {
+  background: #f7f7c0;
+}
+/* Centrer alt indhold vertikalt og horisontalt på loading-side */
+.center-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  z-index: 2;
+}
+.center-content .book {
+  display: block;
+  margin: 0 auto;
+  width: 110px;
+  height: auto;
+}
+.center-content .loading {
+  display: block;
+  margin: 0 auto;
+  width: 320px;
+  max-width: 80vw;
+  height: auto;
+}
+/* Gør både top og bund divider centreret */
+.top-divider {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding-top: 0;
+  box-sizing: border-box;
+}
+/* Center book image on loading-side */
+.center-book {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0 40px 0;
+}
+
+/* Ensure book-img is centered and not too large */
+.center-book .book-img {
+  width: 100px;
+  height: auto;
+  display: block;
+}
+
+/* Place bottom divider at the bottom of the phone */
+/* Gør divideren helt centreret i bunden */
+.bottom-divider {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding-bottom: 18px;
+  box-sizing: border-box;
+}
+
+
 
 
 /* Roots */
@@ -489,6 +617,7 @@ html, body {
   font-size: var(--text-title);
   font-family: var(--font-heading);
   text-align: center;
+  margin-top: 80px;
 }
 
 /* bog */
