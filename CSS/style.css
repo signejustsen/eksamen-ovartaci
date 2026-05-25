@@ -72,24 +72,24 @@ html, body {
 
 
 /* Paula css */
-
+/* ------------------------------------------- Forside -----------------------------------------------------*/
 
 /* FORSIDE */
 .forside-content {
     position: relative;
     z-index: 2;
-  
     height: 100%;
-    padding: 238px 40px 75px;
-  
+    padding: 140px 40px 75px;
     text-align: center;
     color: var(--color-cream);
   }
-  
-  /* TRÆD IND I */
-  
-  
-  /* OVARTACIS INDRE BIBLIOTEK */
+
+  .phone {
+    width: 402px;
+    height: 874px;
+    overflow: hidden;
+  }
+
   .forside-content h1 {
     font-family: var(--font-heading);
     font-size: var(--text-title);
@@ -103,13 +103,10 @@ html, body {
   .start-knap {
     width: 100%;
     height: 82px;
-  
     border-radius: 9px;
     border: 2px solid var(--color-burgundy);
-  
     background: var(--color-pale-yellow);
     color: var(--color-burgundy);
-  
     font-family: var(--font-body);
     font-size: var(--text-button);
     font-weight: 700;
@@ -120,15 +117,82 @@ html, body {
   /* Nederste tekst */
   .forside-content p {
     margin-top: 100px;
-  
     font-family: var(--font-body);
     font-size: var(--text-bodytext);
-    font-weight: 700;
     line-height: 1.25;
   
     color: var(--color-pale-yellow);
   }
+  .forside {
+    position: relative;
+  
+    width: 100%;
+    height: 100%;
+  
+    background-image: url("../img/start.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+/* ------------------------------------------- Velkommen -----------------------------------------------------*/
+.velkommen-content {
+  height: 100%;
+  padding: 80px 24px 80px;
+  text-align: center;
+  color: var(--color-cream);
+}
 
+.divider {
+  width: 100%;
+  margin: 0 auto 150px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+}
+
+.divider span {
+  height: 1px;
+  flex: 1;
+  background-color: var(--color-cream);
+}
+
+.star-icon {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+}
+
+.velkommen-content p {
+  text-align: left;
+  width: 100%;
+  padding-top: 90px;
+  max-width: 260px;
+  font-family: var(--font-body);
+  font-size: var(--text-bodytext);
+  color: var(--color-cream);
+}
+
+.fortsaet-knap {
+  position: absolute;
+  left: 40px;
+  right: 40px;
+  bottom: 80px;
+
+  height: 96px;
+  border-radius: 9px;
+  border: 2px solid var(--color-brown);
+
+  background: var(--color-pale-yellow);
+  color: var(--color-burgundy);
+
+  font-family: var(--font-body);
+  font-size: var(--text-button);
+  font-weight: 700;
+
+  cursor: pointer;
+}
 
 
 /* Signe css */
@@ -169,7 +233,26 @@ html, body {
     font-family: var(--font-heading);
     color: var(--color-pale-yellow);  
 }
+.tilbage {
+  position: absolute;
+  top: 32px;
+  left: 26px;
 
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+
+  background-color: var(--color-cream);
+  color: var(--color-burgundy);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-decoration: none;
+  font-size: 30px;
+  line-height: 1;
+}
 
 
 /* Maria css */
