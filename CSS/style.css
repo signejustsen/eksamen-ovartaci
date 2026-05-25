@@ -253,10 +253,8 @@ html, body {
   }
   .forside {
     position: relative;
-  
     width: 100%;
     height: 100%;
-  
     background-image: url("../img/start.png");
     background-size: cover;
     background-position: center;
@@ -307,21 +305,129 @@ html, body {
   left: 40px;
   right: 40px;
   bottom: 80px;
-
   height: 96px;
   border-radius: 9px;
   border: 2px solid var(--color-brown);
-
   background: var(--color-pale-yellow);
   color: var(--color-burgundy);
-
   font-family: var(--font-body);
   font-size: var(--text-button);
-  font-weight: 700;
+  cursor: pointer;
+}
+/* ------------------------------------------- Bibliotek -----------------------------------------------------*/
+.phone.bibliotek-side {
+  background-image: url("../img/bogbaggrund.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
 
+.back-button {
+  position: absolute;
+  top: 28px;
+  left: 28px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--color-cream);
+  color: var(--color-burgundy);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+}
+
+
+.book-content h1 {
+  text-align: center;
+  font-size: var(--text-title);
+  letter-spacing: 4px;
+  margin: 0 0 10px;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.divider span {
+  flex: 1;
+  height: 1px;
+  background: #fff1d0;
+}
+
+.star-icon {
+  width: 36px;
+}
+
+.book-content {
+  padding: 130px 25px 30px;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  column-gap: 10px;
+  row-gap: 30px;
+  justify-content: center;
+  justify-items: center;
+}
+
+.book-card {
+  width: 120px;
+  text-decoration: none;
+  margin-bottom: 10px;
+  
+}
+
+.book-card img {
+  width: 100%;
+  display: block;
+}
+
+.ending-text {
+  text-align: center;
+  font-family: var(--text-bodytext);
+  font-size: var(--text-mediumtitle);
+  line-height: 1.3;
+  margin: 0 0 18px;
+}
+
+.end-button {
+  position: absolute;
+  border-radius: 9px;
+  border: 2px solid var(--color-brown);
+  background: var(--color-pale-yellow);
+  color: var(--color-burgundy);
+  font-family: var(--text-button);
+  font-size: var(--text-button);
   cursor: pointer;
 }
 
+
+
+/* Animation for book cover images */
+
+.book-card img {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(3deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
 
 /* Signe css */
 
