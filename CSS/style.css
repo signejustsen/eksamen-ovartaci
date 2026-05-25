@@ -300,6 +300,7 @@ html, body {
   font-size: var(--text-title);
   font-family: var(--font-heading);
   text-align: center;
+  margin-top: 80px;
 }
 
 /* bog */
