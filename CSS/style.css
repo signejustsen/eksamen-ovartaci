@@ -468,11 +468,12 @@ html, body {
 }
 
 .svar-knapper button{
-    width:260px;
+    width:300px;
     padding: 18px;
     border-radius: 5px;
+    justify-content: center;
     color: var(--color-burgundy);
-    font-size: var(--text-button);
+    font-size: var(--text-mediumtitle);
     font-family: var(--font-heading);
     background-color: var(--color-pale-yellow);  
     display: flex;
