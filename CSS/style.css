@@ -428,6 +428,7 @@ html, body {
   text-align: center;
   margin-top: 0;
 }
+/* ------------------------------------------- Loadingside -----------------------------------------------------*/
 
 /* Centrer alt indhold vertikalt og horisontalt på loading-side */
 .center-content {
@@ -470,6 +471,7 @@ html, body {
   padding-top: 0;
   box-sizing: border-box;
 }
+
 /* Center book image on loading-side */
 .center-book {
   display: flex;
@@ -500,6 +502,13 @@ html, body {
   padding-bottom: 18px;
   box-sizing: border-box;
 }
+
+.loading-video {
+  width: 100px;
+  display: block;
+  margin: 260px auto 0;
+}
+/* ------------------------------------------- afslutningsside -----------------------------------------------------*/
 .afslut-side {
   background: var(--color-burgundy);
   position: relative;
