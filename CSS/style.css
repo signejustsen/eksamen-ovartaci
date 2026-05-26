@@ -185,7 +185,6 @@ html, body {
   height: 28px;
   border-radius: 50%;
   place-items: center;
-  stroke: var(--color-burgundy);
 }
 
 .billede-placeholder {
@@ -583,6 +582,7 @@ html, body {
   align-items: center;
   justify-content: center;
   font-size: 28px;
+ border: var(--color-burgundy) 3px solid;
 }
 
 
