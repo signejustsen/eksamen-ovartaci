@@ -73,62 +73,137 @@ html, body {
 /* Paula css */
 
 
-/* FORSIDE */
+/*------------------------------------------------------ FORSIDE ----------------------------------------------- */
+
+.forside {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+
+  background-image: url("../img/start.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .forside-content {
     position: relative;
     z-index: 2;
-  
     height: 100%;
     padding: 238px 40px 75px;
+    text-align: center;
+    color: var(--color-cream);
+  }
+    
+  /* OVARTACIS INDRE BIBLIOTEK */
+ .forside-content h1 {
+  font-family: var(--font-heading);
+  font-size: var(--text-title);
+  font-weight: 700;
+  line-height: 1.25;
+
+  margin-bottom: 48px;
+}
+
+/* START-knap */
+.start-knap {
+  position: absolute;
+    left: 40px;
+    right: 40px;
+    bottom: 30px;
+    height: 96px;
+    border-radius: 9px;
+    border: 2px solid var(--color-brown);
+    background: var(--color-pale-yellow);
+    color: var(--color-burgundy);
+    font-family: var(--font-body);
+    font-size: var(--text-button);
+    font-weight: 700;
   
+    cursor: pointer;
+}
+
+/* Nederste tekst */
+.forside-content p {
+  margin-top: 100px;
+  font-family: var(--font-body);
+  font-size: var(--text-bodytext);
+  line-height: 1.25;
+
+  color: var(--color-pale-yellow);
+}
+
+
+  /*------------------------------------------- VELKOMMEN -----------------------------------------------------*/
+  .velkommen {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: var(--color-burgundy);
+    overflow: hidden;
+  }
+  
+  .tilbage-knap {
+    position: absolute;
+    top: 30px;
+    left: 24px;
+    z-index: 2;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: none;
+    background: var(--color-cream);
+    color: var(--color-burgundy);
+    font-size: 40px;
+    line-height: 1;
+    cursor: pointer;
+  }
+  
+  .velkommen-content {
+    height: 100%;
+    padding: 90px 40px 80px;
     text-align: center;
     color: var(--color-cream);
   }
   
-  /* TRÆD IND I */
-  
-  
-  /* OVARTACIS INDRE BIBLIOTEK */
-  .forside-content h1 {
+  .velkommen-content h1 {
     font-family: var(--font-heading);
-    font-size: var(--text-title);
+    font-size: 43px;
     font-weight: 700;
-    line-height: 1.25;
-  
-    margin-bottom: 48px;
+    margin-bottom: 24px;
   }
   
-  /* START-knap */
-  .start-knap {
+  .stjerne-divider {
     width: 100%;
-    height: 82px;
+    max-width: 392px;
+    margin-bottom: 160px;
+  }
   
+  .velkommen-content p {
+    text-align: left;
+    padding-top: 80px;
+    font-family: var(--font-body);
+    font-size: var(--text-bodytext);  
+    color: var(--color-cream);
+  }
+  
+  .fortsaet-knap {
+    position: absolute;
+    left: 40px;
+    right: 40px;
+    bottom: 80px;
+    height: 96px;
     border-radius: 9px;
-    border: 2px solid var(--color-burgundy);
-  
+    border: 2px solid var(--color-brown);
     background: var(--color-pale-yellow);
     color: var(--color-burgundy);
-  
     font-family: var(--font-body);
     font-size: var(--text-button);
     font-weight: 700;
   
     cursor: pointer;
   }
-  
-  /* Nederste tekst */
-  .forside-content p {
-    margin-top: 100px;
-  
-    font-family: var(--font-body);
-    font-size: var(--text-bodytext);
-    font-weight: 700;
-    line-height: 1.25;
-  
-    color: var(--color-pale-yellow);
-  }
-
-
 
 /* ------------------------------------------- BØGERNE TÆT PÅ -----------------------------------------------------*/
 
@@ -160,7 +235,7 @@ html, body {
 }
 
 .bog-intro h1 {
-  margin: 30px 0 18px;
+  margin: 20px 0 5px;
   font-family: var(--font-body);
   font-size: var(--text-title);
   text-align: center;
@@ -300,12 +375,13 @@ html, body {
 
 
 /* Maria css */
+
 /* Identitetsside kort og knap */
 .identitet-card {
   background: var(--color-cream);
   border-radius: 16px;
-  padding: 32px 18px 28px 18px;
-  margin: 36px 0 48px 0;
+  padding: 24px 20px;
+  margin: 36px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -331,30 +407,7 @@ html, body {
   text-align: center;
   margin-top: 0;
 }
-.afslut-knap {
-  position: absolute;
-  left: 5%;
-  right: 5%;
-  bottom: 40px;
-  width: 90%;
-  max-width: 420px;
-  padding: 22px 0;
-  background: var(--color-pale-yellow);
-  color: var(--color-burgundy);
-  border-radius: 12px;
-  font-size: 2.5rem;
-  font-family: var(--font-heading);
-  font-weight: 700;
-  text-align: center;
-  text-decoration: none;
-  letter-spacing: 1px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-  transition: background 0.2s;
-  z-index: 10;
-}
-.afslut-knap:hover {
-  background: #f7f7c0;
-}
+
 /* Centrer alt indhold vertikalt og horisontalt på loading-side */
 .center-content {
   position: absolute;
@@ -426,7 +479,63 @@ html, body {
   padding-bottom: 18px;
   box-sizing: border-box;
 }
+.afslut-side {
+  background: var(--color-burgundy);
+  position: relative;
+}
 
+.afslut-content {
+  height: 100%;
+  padding: 90px 30px 60px;
+  text-align: center;
+  color: var(--color-cream);
+}
+
+.afslut-content h1 {
+  font-family: var(--font-body);
+  font-size: var(--text-bodytext);
+  line-height: 1.3;
+  margin: 0 0 55px;
+}
+.stjerner {
+  position: relative;
+  width: 220px;
+  height: 140px;
+  margin: 80px auto;
+}
+
+.stjerner img {
+  position: absolute;
+  height: auto;
+}
+
+.stjerner img:nth-child(1) {
+  width: 20px;
+  left: 0;
+  bottom: 0;
+}
+
+.stjerner img:nth-child(2) {
+  width: 30px;
+  left: 70px;
+  top: 40px;
+}
+
+.stjerner img:nth-child(3) {
+  width: 25px;
+  right: 0;
+  top: 0;
+}
+.afslut-content h2 {
+  font-family: var(--font-body);
+  font-size: var(--text-mediumtitle);
+  margin: 0 0 45px;
+}
+
+.replay img {
+  width: 50px;
+  height: auto;
+}
 
 /* Sofie css */
 
@@ -729,7 +838,7 @@ html, body {
 
 .ending-text {
   text-align: center;
-  font-family: var(--text-bodytext);
+  font-family: var(--font-body);
   font-size: var(--text-mediumtitle);
   line-height: 1.3;
   margin: 0 0 18px;
