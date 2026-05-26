@@ -1,187 +1,3 @@
-/* Afslutning side */
-.afslutning-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
-  padding-top: 60px;
-}
-.afslutning-tekst p {
-  color: var(--color-cream);
-  font-family: var(--font-heading);
-  font-size: 2.3rem;
-  text-align: center;
-  margin: 0 0 24px 0;
-  line-height: 1.2;
-}
-.afslutning-stjerner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 18px;
-  margin: 38px 0 38px 0;
-}
-.star-ikon.stor {
-  width: 60px;
-}
-.star-ikon.mellem {
-  width: 36px;
-}
-.star-ikon.lille {
-  width: 24px;
-}
-.afslutning-genstart {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 30px;
-}
-.afslutning-genstart-tekst {
-  color: var(--color-cream);
-  font-family: var(--font-heading);
-  font-size: 2rem;
-  margin-bottom: 18px;
-}
-.genstart-ikon-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.genstart-ikon {
-  width: 90px;
-  height: 90px;
-  display: block;
-}
-/* Identitetsside kort og knap */
-.identitet-card {
-  background: var(--color-cream);
-  border-radius: 16px;
-  padding: 32px 18px 28px 18px;
-  margin: 36px 24px 48px 24px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-}
-.identitet-card-title {
-  color: var(--color-burgundy);
-  font-family: var(--font-heading);
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 12px;
-  text-align: center;
-}
-.identitet-card-img {
-  width: 120px;
-  height: auto;
-  margin-bottom: 18px;
-}
-.identitet-card-text {
-  color: var(--color-burgundy);
-  font-family: var(--font-body);
-  font-size: 1.7rem;
-  text-align: center;
-  margin-top: 0;
-}
-.afslut-knap {
-  position: absolute;
-  left: 5%;
-  right: 5%;
-  bottom: 40px;
-  width: 90%;
-  max-width: 420px;
-  padding: 22px 0;
-  background: var(--color-pale-yellow);
-  color: var(--color-burgundy);
-  border-radius: 12px;
-  font-size: 2.5rem;
-  font-family: var(--font-heading);
-  font-weight: 700;
-  text-align: center;
-  text-decoration: none;
-  letter-spacing: 1px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-  transition: background 0.2s;
-  z-index: 10;
-}
-.afslut-knap:hover {
-  background: #f7f7c0;
-}
-/* Centrer alt indhold vertikalt og horisontalt på loading-side */
-.center-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 32px;
-  z-index: 2;
-}
-.center-content .book {
-  display: block;
-  margin: 0 auto;
-  width: 110px;
-  height: auto;
-}
-.center-content .loading {
-  display: block;
-  margin: 0 auto;
-  width: 320px;
-  max-width: 80vw;
-  height: auto;
-}
-/* Gør både top og bund divider centreret */
-.top-divider {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 70px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  padding-top: 0;
-  box-sizing: border-box;
-}
-/* Center book image on loading-side */
-.center-book {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 40px 0 40px 0;
-}
-
-/* Ensure book-img is centered and not too large */
-.center-book .book-img {
-  width: 100px;
-  height: auto;
-  display: block;
-}
-
-/* Place bottom divider at the bottom of the phone */
-/* Gør divideren helt centreret i bunden */
-.bottom-divider {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  padding-bottom: 18px;
-  box-sizing: border-box;
-}
-
-
 
 
 /* Roots */
@@ -256,24 +72,24 @@ html, body {
 
 
 /* Paula css */
-/* ------------------------------------------- Forside -----------------------------------------------------*/
+
 
 /* FORSIDE */
 .forside-content {
     position: relative;
     z-index: 2;
+  
     height: 100%;
-    padding: 140px 40px 75px;
+    padding: 238px 40px 75px;
+  
     text-align: center;
     color: var(--color-cream);
   }
-
-  .phone {
-    width: 402px;
-    height: 874px;
-    overflow: hidden;
-  }
-
+  
+  /* TRÆD IND I */
+  
+  
+  /* OVARTACIS INDRE BIBLIOTEK */
   .forside-content h1 {
     font-family: var(--font-heading);
     font-size: var(--text-title);
@@ -287,10 +103,13 @@ html, body {
   .start-knap {
     width: 100%;
     height: 82px;
+  
     border-radius: 9px;
     border: 2px solid var(--color-burgundy);
+  
     background: var(--color-pale-yellow);
     color: var(--color-burgundy);
+  
     font-family: var(--font-body);
     font-size: var(--text-button);
     font-weight: 700;
@@ -301,82 +120,15 @@ html, body {
   /* Nederste tekst */
   .forside-content p {
     margin-top: 100px;
+  
     font-family: var(--font-body);
     font-size: var(--text-bodytext);
+    font-weight: 700;
     line-height: 1.25;
   
     color: var(--color-pale-yellow);
   }
-  .forside {
-    position: relative;
-  
-    width: 100%;
-    height: 100%;
-  
-    background-image: url("../img/start.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-/* ------------------------------------------- Velkommen -----------------------------------------------------*/
-.velkommen-content {
-  height: 100%;
-  padding: 80px 24px 80px;
-  text-align: center;
-  color: var(--color-cream);
-}
 
-.divider {
-  width: 100%;
-  margin: 0 auto 150px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 18px;
-}
-
-.divider span {
-  height: 1px;
-  flex: 1;
-  background-color: var(--color-cream);
-}
-
-.star-icon {
-  width: 42px;
-  height: 42px;
-  object-fit: contain;
-}
-
-.velkommen-content p {
-  text-align: left;
-  width: 100%;
-  padding-top: 90px;
-  max-width: 260px;
-  font-family: var(--font-body);
-  font-size: var(--text-bodytext);
-  color: var(--color-cream);
-}
-
-.fortsaet-knap {
-  position: absolute;
-  left: 40px;
-  right: 40px;
-  bottom: 80px;
-
-  height: 96px;
-  border-radius: 9px;
-  border: 2px solid var(--color-brown);
-
-  background: var(--color-pale-yellow);
-  color: var(--color-burgundy);
-
-  font-family: var(--font-body);
-  font-size: var(--text-button);
-  font-weight: 700;
-
-  cursor: pointer;
-}
 
 
 /* Signe css */
@@ -386,10 +138,7 @@ html, body {
   justify-content: center;
   text-align: center;
   width: 100%;
-  margin-bottom: 30px;
-  margin-top: 30px;
 }
-
 
 .tilbage {
   position: absolute;
@@ -410,118 +159,17 @@ html, body {
   margin: 0 auto 25px;
 }
 
-.svar-knapper{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    width:100%;
-}
-
-.svar-knapper button{
-    width:260px;
-    padding: 18px;
+.svar-knapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
     border-radius: 5px;
-    color: var(--color-burgundy);
     font-size: var(--text-button);
     font-family: var(--font-heading);
-    background-color: var(--color-pale-yellow);  
-    display: flex;
-    margin: 15px;
+    color: var(--color-pale-yellow);  
 }
 
-.hoer-side .divider {
-  width: 80%;
-  margin: 0 auto 28px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 18px;
-}
-
-.hoer-side .divider span {
-  height: 1px;
-  flex: 1;
-  background-color: var(--color-cream);
-}
-
-.hoer-body {
-  margin: 0;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-}
-
-.hoer-side {
-  width: 390px;
-  min-height: 844px;
-  background-color: var(--color-burgundy);
-  color: var(--color-pale-yellow);
-  position: relative;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 32px;
-  box-sizing: border-box;
-}
-
-.hoer-side h1 {
-  margin-top: 40px;
-  margin-bottom: 30px;
-  font-family: var(--font-heading);
-  font-size: var(--text-title);
-}
-
-
-.hoer-cirkel {
-  width: 230px;
-  height: 230px;
-  border-radius: 50%;
-  background-color: var(--color-pale-yellow);
-  display: grid;
-  place-items: center;
-  margin: 50px;
-}
-
-.hoer-cirkel img {
-  width: 110px;
-  height: auto;
-}
-
-.lydboelge {
-  color: var(--color-pale-yellow);
-  font-size: 46px;
-  letter-spacing: 5px;
-  margin-bottom: 62px;
-}
-
-.hoer-tekst {
-  max-width: 260px;
-  font-family: var(--font-body);
-  font-size: var(--text-bodytext);
-  line-height: 1.05;
-}
-.tilbage {
-  position: absolute;
-  top: 32px;
-  left: 26px;
-
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-
-  background-color: var(--color-cream);
-  color: var(--color-burgundy);
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  text-decoration: none;
-  font-size: 30px;
-  line-height: 1;
-}
 
 
 /* Maria css */
@@ -567,7 +215,6 @@ html, body {
   font-size: var(--text-title);
   font-family: var(--font-heading);
   text-align: center;
-  margin-top: 80px;
 }
 
 /* bog */
