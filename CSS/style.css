@@ -637,7 +637,7 @@ html, body {
 
 .ending-text {
   text-align: center;
-  font-family: var(--text-bodytext);
+  font-family: var(--font-body);
   font-size: var(--text-mediumtitle);
   line-height: 1.3;
   margin: 0 0 18px;
