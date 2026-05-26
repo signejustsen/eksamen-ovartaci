@@ -428,6 +428,7 @@ html, body {
   text-align: center;
   margin-top: 0;
 }
+/* ------------------------------------------- Loadingside -----------------------------------------------------*/
 
 /* Centrer alt indhold vertikalt og horisontalt på loading-side */
 .center-content {
@@ -470,6 +471,7 @@ html, body {
   padding-top: 0;
   box-sizing: border-box;
 }
+
 /* Center book image on loading-side */
 .center-book {
   display: flex;
@@ -500,6 +502,22 @@ html, body {
   padding-bottom: 18px;
   box-sizing: border-box;
 }
+.loading-side {
+  width: 100%;
+  height: 100%;
+  background: var(--color-burgundy);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-video {
+  width: 260px;
+  height: auto;
+}
+
+/* ------------------------------------------- afslutningsside -----------------------------------------------------*/
 .afslut-side {
   background: var(--color-burgundy);
   position: relative;
