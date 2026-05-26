@@ -274,6 +274,26 @@ html, body {
   background-color: #d9d9d9;
   margin: 0 auto 25px;
 }
+.udforsk-body .divider {
+  width: 80%;
+  margin: 0 auto 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+}
+
+.udforsk-body .divider span {
+  height: 1px;
+  flex: 1;
+  background-color: var(--color-cream);
+}
+
+.udforsk-body .star-icon {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+}
 
 .svar-knapper button {
     width:350px;
@@ -320,21 +340,22 @@ html, body {
   margin-top: 50px;
   margin-bottom: 16px;
   font-family: var(--font-heading);
-  font-size: var(--font-heading);
+  font-size: var(--text-title);
 }
 
 .hoer-cirkel {
-  width: 230px;
-  height: 230px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   background-color: var(--color-pale-yellow);
   display: grid;
   place-items: center;
   margin-bottom: 58px;
+  margin-top: 50px;
 }
 
 .hoer-cirkel img {
-  width: 110px;
+  width: 60px;
   height: auto;
 }
 
@@ -351,10 +372,10 @@ html, body {
   font-size: var(--text-bodytext);
   line-height: 1.05;
 }
+
 .hoer-side .divider {
   width: 80%;
   margin: 0 auto 28px;
-
   display: flex;
   align-items: center;
   justify-content: center;
