@@ -249,7 +249,7 @@ html, body {
   text-align: center;
   width: 100%;
   margin-bottom: 50px;
-  margin-top: 40px;
+  margin-top: 70px;
 }
 
 .tilbage {
@@ -274,6 +274,7 @@ html, body {
   background-color: #d9d9d9;
   margin: 0 auto 25px;
 }
+
 .udforsk-body .divider {
   width: 80%;
   margin: 0 auto 28px;
@@ -296,25 +297,26 @@ html, body {
 }
 
 .svar-knapper button {
-    width:350px;
-    height: 200 px;
-    margin: 15px;
-    margin-top: 15px;
-    padding:18px;
-    border:none;
-    border-radius:8px;
-    font-size: var(--text-button);
-    font-family: var(--font-heading);
-    color: var(--color-burgundy);
+    width: 320px;
+    height: 90px;
     background-color: var(--color-pale-yellow);
+    color: var(--color-burgundy);
+    border: none;
+    border-radius: 8px;
+    font-size: var(--text-bodytext);
+    font-family: var(--font-heading);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 28px;
 }
 
 .svar-knapper {
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    width:400px;
-    gap:28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    width: 100%;
 }
 
 .hoer-body {
