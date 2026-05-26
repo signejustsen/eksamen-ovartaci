@@ -103,6 +103,26 @@ html, body {
   line-height: 1.25;
   margin-bottom: 48px;
 }
+.forside-start-knap {
+  position: absolute;
+  left: 40px;
+  right: 40px;
+  top: 430px;
+  height: 90px;
+  background: var(--color-pale-yellow);
+  color: var(--color-burgundy);
+  border: 2px solid var(--color-brown);
+  border-radius: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-body);
+  font-size: var(--text-button);
+  font-weight: 700;
+  text-decoration: none;
+
+}
+
 /* START-knap */
 .start-knap {
   position: absolute;
@@ -126,7 +146,7 @@ html, body {
   font-family: var(--font-body);
   font-size: var(--text-bodytext);
   line-height: 1.25;
-
+  padding-top: 75px;
   color: var(--color-pale-yellow);
 }
 
