@@ -502,20 +502,8 @@ html, body {
   padding-bottom: 18px;
   box-sizing: border-box;
 }
-.loading-side {
-  width: 100%;
-  height: 100%;
-  background: var(--color-burgundy);
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.loading-video {
-  width: 260px;
-  height: auto;
-}
 
 /* ------------------------------------------- afslutningsside -----------------------------------------------------*/
 .afslut-side {
