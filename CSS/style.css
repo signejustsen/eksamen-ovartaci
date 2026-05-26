@@ -301,7 +301,7 @@ html, body {
 
 /* ------------------------------------------- BØGERNE TÆT PÅ -----------------------------------------------------*/
 
-.phone {
+.boegerne{
   background-image: url("../img/trae-baggrund.png");
   background-size: cover;
   background-position: center;
