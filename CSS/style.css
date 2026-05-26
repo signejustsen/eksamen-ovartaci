@@ -239,7 +239,7 @@ html, body {
 
 /* Signe css */
 
-.udforsk-body h1, h2, p{
+.udforsk-body h1, .udforsk-body h2, .udforsk-body p{
   display: flex;
   justify-content: center;
   text-align: center;
