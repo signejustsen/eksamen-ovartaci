@@ -503,8 +503,11 @@ html, body {
   box-sizing: border-box;
 }
 
-
-
+.loading-video {
+  width: 100px;
+  display: block;
+  margin: 260px auto 0;
+}
 /* ------------------------------------------- afslutningsside -----------------------------------------------------*/
 .afslut-side {
   background: var(--color-burgundy);
