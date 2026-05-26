@@ -506,6 +506,16 @@ html, body {
   display: block;
   margin: 260px auto 0;
 }
+
+
+.loading-animation {
+  width: 320px;
+  display: block;
+  margin: 60px 35px;
+
+
+}
+
 /* ------------------------------------------- afslutningsside -----------------------------------------------------*/
 .afslut-side {
   background: var(--color-burgundy);
