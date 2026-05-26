@@ -108,20 +108,20 @@ html, body {
 
 /* START-knap */
 .start-knap {
-  width: 100%;
-  height: 82px;
-
-  border-radius: 9px;
-  border: 2px solid var(--color-burgundy);
-
-  background: var(--color-pale-yellow);
-  color: var(--color-burgundy);
-
-  font-family: var(--font-body);
-  font-size: var(--text-button);
-  font-weight: 700;
-
-  cursor: pointer;
+  position: absolute;
+    left: 40px;
+    right: 40px;
+    bottom: 30px;
+    height: 96px;
+    border-radius: 9px;
+    border: 2px solid var(--color-brown);
+    background: var(--color-pale-yellow);
+    color: var(--color-burgundy);
+    font-family: var(--font-body);
+    font-size: var(--text-button);
+    font-weight: 700;
+  
+    cursor: pointer;
 }
 
 /* Nederste tekst */
@@ -235,7 +235,7 @@ html, body {
 }
 
 .bog-intro h1 {
-  margin: 30px 0 18px;
+  margin: 20px 0 5px;
   font-family: var(--font-body);
   font-size: var(--text-title);
   text-align: center;
