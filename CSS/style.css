@@ -185,6 +185,7 @@ html, body {
   height: 28px;
   border-radius: 50%;
   place-items: center;
+  stroke: var(--color-burgundy);
 }
 
 .billede-placeholder {
