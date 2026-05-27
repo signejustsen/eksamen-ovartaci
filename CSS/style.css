@@ -415,6 +415,24 @@ html, body {
   object-fit: contain;
 }
 
+.bund-knapper {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.bund-knapper a {
+  background-color: var(--color-pale-yellow);
+  color: var(--color-burgundy);
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 5px;
+  font-family: var(--font-heading);
+  font-size: var(--text-bodytext);
+}
+
 
 /* Maria css */
 
