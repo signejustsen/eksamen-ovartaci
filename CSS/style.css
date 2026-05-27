@@ -141,6 +141,24 @@ html, body {
     cursor: pointer;
 }
 
+.afslut-knap {
+  position: absolute;
+    left: 40px;
+    right: 40px;
+    bottom: 20px;
+    height: 56px;
+    border-radius: 9px;
+    padding-top: 8px;
+    border: 2px solid var(--color-brown);
+    background: var(--color-pale-yellow);
+    color: var(--color-burgundy);
+    font-family: var(--font-body);
+    font-size: var(--text-button);
+    font-weight: 700;
+    cursor: pointer;
+
+}
+
 /* Nederste tekst */
 .forside-content p {
   margin-top: 100px;
@@ -820,7 +838,7 @@ html, body {
 /*-------------------------------------------- Biblotek side ------------------------------------------------------------*/
 
 .phone.bibliotek-side {
-  background-image: url("../img/bogbaggrund.png");
+  background-image: url("../img/bibbaggrund.png");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -873,10 +891,11 @@ html, body {
 }
 
 .book-grid {
+  padding-top: 120px;
   display: grid;
   grid-template-columns: repeat(3, 100px);
-  column-gap: 10px;
-  row-gap: 30px;
+  column-gap: 20px;
+  row-gap: 150px;
   justify-content: center;
   justify-items: center;
 }
@@ -914,46 +933,62 @@ html, body {
   font-family: var(--text-bodytext);
 }
 
-.book-grid h3 {
-  font-family: var(--font-body);
-  font-size: var(--text-smalltitle);
-  font-weight: 700;
-  letter-spacing: 0.8px;
-  line-height: 1.15;
-  text-align: center;
-  font-weight: 400;
-
-  max-width: 95px;
-  min-height: 32px;
-
-  margin-left: 10px;
-  color: var(--color-cream);
-
-  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.75);
-
-}
-
-
-
-
-
-/* Animation for book cover images */
+/* Animation for bøgerne i biblioteket */
 
 .book-card img {
   animation: float 4s ease-in-out infinite;
+  transform-origin: center;
+}
+
+/* Bog 1 */
+.book-card:nth-child(1) img {
+  animation-duration: 3s;
+}
+
+/* Bog 2 */
+.book-card:nth-child(2) img {
+  animation-duration: 4.5s;
+}
+
+/* Bog 3 */
+.book-card:nth-child(3) img {
+  animation-duration: 3.8s;
+}
+
+/* Bog 4 */
+.book-card:nth-child(4) img {
+  animation-duration: 5s;
+}
+
+/* Bog 5 */
+.book-card:nth-child(5) img {
+  animation-duration: 4.2s;
+}
+
+/* Bog 6 */
+.book-card:nth-child(6) img {
+  animation-duration: 3.5s;
 }
 
 @keyframes float {
   0% {
-    transform: rotate(0deg);
+    transform: translateY(0px) rotate(-3deg);
+  }
+
+  25% {
+    transform: translateY(-6px) rotate(2deg);
   }
 
   50% {
-    transform: rotate(3deg);
+    transform: translateY(0px) rotate(5deg);
+  }
+
+  75% {
+    transform: translateY(6px) rotate(-2deg);
   }
 
   100% {
-    transform: rotate(0deg);
+    transform: translateY(0px) rotate(-3deg);
   }
 }
 
