@@ -903,6 +903,7 @@ html, body {
   letter-spacing: 0.8px;
   line-height: 1.15;
   text-align: center;
+  font-weight: 400;
 
   max-width: 95px;
   min-height: 32px;
