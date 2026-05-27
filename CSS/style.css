@@ -30,6 +30,7 @@
   --text-bodytext: 20px;      /* brødtekst */
   --text-mediumtitle: 22px;   /* underoverskrifter */
   --text-title: 32px;      /* store titler */
+  --text-smalltitle: 12px;   /* små titler */
 }
 
  /* =====================================
@@ -892,6 +893,15 @@ html, body {
   font-size: var(--text-button);
   font-family: var(--text-bodytext);
 }
+
+.book-grid h3 {
+  font-family: var(--font-body);
+  font-size: var(--text-smalltitle);
+  text-align: center;
+  margin: 0 0 5px;
+  color: var(--color-cream);
+}
+
 
 
 
