@@ -198,11 +198,13 @@ html, body {
   }
   
   .velkommen-content p {
-    text-align: left;
-    padding-top: 80px;
+    text-align: center;
+    padding-top: 50px;
     font-family: var(--font-body);
     font-size: var(--text-bodytext);  
     color: var(--color-cream);
+    padding: 20px;
+    line-height: 1.5;
   }
   
   .fortsaet-knap {
