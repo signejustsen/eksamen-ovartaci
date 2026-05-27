@@ -992,3 +992,19 @@ html, body {
   }
 }
 
+/*------------------------ audio player -----------------------------------*/
+
+.custom-audio{
+  width:300px;
+  border-radius:13px;
+  background: var(--color-pale-yellow);
+}
+audio{
+  width:300px;
+
+  background:#d8d6a3;
+
+  border: var(--color-burgundy) 3px solid;
+
+  padding:10px;
+}
