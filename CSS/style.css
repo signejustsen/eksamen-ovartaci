@@ -933,6 +933,22 @@ html, body {
   font-family: var(--text-bodytext);
 }
 
+.end-journey {
+  display: block;
+  width: 100%;
+  padding: 14px 0px;
+  margin-top: 45px;
+  background: var(--color-pale-yellow);
+  border-radius: 8px;
+  color: var(--color-burgundy);
+  text-align: center;
+  text-decoration: none;
+  font-size: var(--text-button);
+  font-family: var(--text-bodytext);
+}
+
+
+
 /* Animation for bøgerne i biblioteket */
 
 .book-card img {
