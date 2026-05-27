@@ -992,6 +992,49 @@ html, body {
   }
 }
 
+/* Feedback efter at have været inde på bogen */
+
+.book-card {
+  position: relative;
+  display: block;
+}
+
+.book-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.book-card.visited img {
+  filter: brightness(0.5);
+  border-radius: 6px;
+}
+
+.book-card.visited::after {
+  content: "✓";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+
+  background: #f5ead6;
+  color: #4b1020;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 18px;
+  font-weight: bold;
+
+  z-index: 10;
+  pointer-events: none;
+}
+
 /*------------------------ audio player -----------------------------------*/
 
 .custom-audio{
