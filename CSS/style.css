@@ -509,33 +509,25 @@ html, body {
 }
 
 .hoer-side h1 {
-  margin-top: 50px;
   margin-bottom: 16px;
   font-family: var(--font-heading);
   font-size: var(--text-title);
 }
 
 .hoer-cirkel {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   background-color: var(--color-pale-yellow);
   display: grid;
   place-items: center;
-  margin-bottom: 58px;
-  margin-top: 50px;
+  margin-bottom: 30px;
+  margin-top: 20px;
 }
 
 .hoer-cirkel img {
   width: 60px;
   height: auto;
-}
-
-.lydboelge {
-  color: var(--color-pale-yellow);
-  font-size: 46px;
-  letter-spacing: 5px;
-  margin-bottom: 62px;
 }
 
 .hoer-tekst {
@@ -547,17 +539,9 @@ html, body {
 
 .hoer-side .divider {
   width: 80%;
-  margin: 0 auto 28px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 18px;
-}
-
-.hoer-side .divider span {
-  height: 1px;
-  flex: 1;
-  background-color: var(--color-cream);
 }
 
 .hoer-side .star-icon {
@@ -573,7 +557,7 @@ html, body {
   gap: 20px;
 
   width: 100%;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 
