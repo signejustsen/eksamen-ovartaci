@@ -1,46 +1,43 @@
 "use strict";
 
-console.log("BOG.JS ER LOADET:", window.location.pathname);
-
-// Finder alle bøger på biblioteksbordet
-// Alle HTML-elementer med class="book-card"
+// Finder alle elementer med class="book-card"
+// (altså alle bøgerne i biblioteket)
 const books = document.querySelectorAll(".book-card");
 
-// Koden kører kun, hvis der findes mindst en bog på siden
-if (books.length > 0) {
+// Går igennem hver bog én ad gangen
+books.forEach(function(book) {
 
-  // Går igennem hver bog en ad gangen
-  books.forEach(function (book) {
+  // Henter bogens data-book værdi fra HTML
+  // fx data-book="identitet"
+  const bookName = book.dataset.book;
 
-    // const bookName = book.dataset.book;
-    const bookName = book.dataset.book;
+  // Hvis bogen ikke har et data-book navn
+  // stoppes funktionen for den bog
+  if (!bookName) return;
 
-    // Hvis en bog mangler href, springes den over
-    // Det forhindrer fejl i localStorage
-    if (!bookName) return;
+  // Laver en unik localStorage nøgle
+  // fx "visited-identitet"
+  const storageKey = "visited-" + bookName;
 
-    // Laver en unik localStorage-nøgle til hver bog
-    // Fx "visited-identitet"
-    const storageKey = "visited-" + bookName;
+  // Tjekker om bogen allerede er besøgt
+  // Hvis værdien i localStorage er "true"
+  if (localStorage.getItem(storageKey) === "true") {
 
-    // Tjekker om bogen allerede er besøgt
-    // localStorage.getItem() henter den gemte værdi fra browseren
-    const isVisited = localStorage.getItem(storageKey);
+    // Tilføjer class="visited"
+    // så checkmark og styling vises i CSS
+    book.classList.add("visited");
+  }
 
-    // Hvis værdien er "true", betyder det, at bogen tidligere er blevet åbnet
-    // Derfor tilføjes class="visited", så CSS kan vise markeringen
-    if (isVisited === "true") {
-      book.classList.add("visited");
-      console.log("MARKERER:", storageKey);
-    }
+  // Når brugeren klikker på en bog
+  book.addEventListener("click", function() {
 
-    // Når brugeren klikker på en bog, køres denne funktion
-    book.addEventListener("click", function () {
-      // Gemmer bogen som besøgt i browserens localStorage
-      localStorage.setItem(storageKey, "true");
-    });
+    // Gemmer bogen som besøgt i localStorage
+    // så browseren husker den
+    localStorage.setItem(storageKey, "true");
+
   });
-}
+
+});
 
 // Finder afslut rejsen/linket med id="resetJourney"
 const resetJourney = document.querySelector("#resetJourney");
@@ -59,6 +56,22 @@ if (resetJourney) {
       
       if (key.startsWith("visited-")) {
         // Fjerner den gemte markering fra localStorage
+        localStorage.removeItem(key);
+      }
+    });
+  });
+}
+
+const startExperience = document.querySelector("#startExperience");
+
+if (startExperience) {
+  startExperience.addEventListener("click", function () {
+    Object.keys(localStorage).forEach(function (key) {
+      if (
+        key.startsWith("visited-") ||
+        key === "identityScores" ||
+        key === "finalIdentity"
+      ) {
         localStorage.removeItem(key);
       }
     });

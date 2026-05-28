@@ -416,11 +416,14 @@ html, body {
   font-size: var(--text-button);
 }
 
+.billede-placeholder img {
+  width: 220px;
+  height: auto;
+}
 .billede-placeholder {
-  width: 300px;
-  height: 400px;
-  background-color: #d9d9d9;
-  margin: 0 auto 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .udforsk-body .divider {
@@ -565,8 +568,10 @@ html, body {
 
 .bund-knapper {
   display: flex;
-  justify-content: center;
-  gap: 18px;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
   width: 100%;
   margin-top: 40px;
 }
@@ -575,13 +580,26 @@ html, body {
 /* STYLING AF KNAPPER */
 
 .bund-knapper a {
-  background-color: var(--color-pale-yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 320px;
+  height: 80px;
+
+  background: var(--color-pale-yellow);
   color: var(--color-burgundy);
+
+  border: 2px solid var(--color-brown);
+  border-radius: 9px;
+
+  font-family: var(--font-body);
+  font-size: var(--text-button);
+  font-weight: 700;
+
   text-decoration: none;
-  padding: 12px;
-  border-radius: 5px;
-  font-family: var(--font-heading);
-  font-size: var(--text-bodytext);
+
+  cursor: pointer;
 }
 
 
@@ -1246,22 +1264,6 @@ body {
   }
 
 
-}
-.phone {
-  position: relative;
-  overflow: hidden;
-}
-
-.dust-video {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  mix-blend-mode: screen;
-  pointer-events: none;
-  z-index: 0;
-  opacity: 0.40;
 }
 
 .velkommen {
