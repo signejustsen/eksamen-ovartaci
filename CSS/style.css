@@ -280,6 +280,79 @@ html, body {
 
 /* Signe css */
 
+/* STYLING AF FAVORITSIDE */
+
+.favorit-body {
+  display: flex;
+  justify-content: center;
+}
+
+.favorit-side {
+  width: 390px;
+  min-height: 844px;
+  background-image: url("img/bogbaggrund.png");
+  background-size: cover;
+  background-position: center;
+  color: var(--color-pale-yellow);
+  position: relative;
+  text-align: center;
+  padding: 32px;
+  box-sizing: border-box;
+}
+
+.favorit-side h1 {
+  font-family: var(--font-heading);
+  font-size: var(--text-buttonl);
+  line-height: 1.05;
+  margin-top: 70px;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin: 25px 0;
+}
+
+.divider span {
+  width: 95px;
+  height: 1px;
+  background: var(--color-pale-yellow);
+}
+
+.divider img {
+  width: 34px;
+}
+
+.favorit-liste {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  flex-wrap: wrap;
+  min-height: 250px;
+  margin-top: 20px;
+}
+
+.favorit-liste img {
+  width: 85px;
+}
+
+.stor-knap {
+  display: block;
+  background: var(--color-pale-yellow);
+  color: var(--color-burgundy);
+  text-decoration: none;
+  font-family: var(--font-heading);
+  font-size: 20px;
+  padding: 22px;
+  border-radius: 8px;
+  margin-top: 35px;
+}
+
+
+/* STYLING AF MÆRK TEMAET OG SE VÆRK */
+
 .udforsk-body h1, .udforsk-body h2, .udforsk-body p{
   display: flex;
   justify-content: center;
@@ -347,7 +420,6 @@ html, body {
     justify-content: center;
     padding: 0 28px;
     cursor: pointer;
-
 }
 
 .svar-knapper {
@@ -372,6 +444,9 @@ html, body {
   text-align: center;
   color: var(--color-cream);
 }
+
+
+/* STYLING AF HØR SIDEN */
 
 .hoer-body {
   display: flex;
@@ -457,6 +532,9 @@ html, body {
   width: 100%;
   margin-top: 40px;
 }
+
+
+/* STYLING AF KNAPPER */
 
 .bund-knapper a {
   background-color: var(--color-pale-yellow);
