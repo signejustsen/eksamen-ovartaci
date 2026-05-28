@@ -350,6 +350,23 @@ html, body {
   margin-top: 35px;
 }
 
+.favorit-knap {
+  position: absolute;
+  top: 28px;
+  right: 28px;
+  background: none;
+  border: none;
+  color: var(--color-pale-yellow);
+  font-size: var(--text-buttonl);
+  font-family: var(--font-body);
+  cursor: pointer;
+  line-height: 1;
+}
+
+.favorit-knap.aktiv {
+  color: var(--color-pale-yellow);
+}
+
 
 /* STYLING AF MÆRK TEMAET OG SE VÆRK */
 
