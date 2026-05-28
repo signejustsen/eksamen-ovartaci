@@ -1065,7 +1065,7 @@ html, body {
   pointer-events: none;
 }
 
-/*------------------------ audio player -----------------------------------*/
+/*-------------------------------------- audio player ------------------------------------------------*/
 
 .custom-audio{
   width:300px;
@@ -1080,4 +1080,27 @@ audio{
   border: var(--color-burgundy) 3px solid;
 
   padding:10px;
+}
+
+
+/*-------------------------------------- animation ----------------------------------------------------*/
+
+.magi-tekst {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: magicFade 2.2s ease forwards;
+}
+
+@keyframes magicFade {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+    filter: blur(6px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
 }
