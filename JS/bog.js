@@ -1,5 +1,7 @@
 "use strict";
 
+console.log("BOG.JS ER LOADET:", window.location.pathname);
+
 // Finder alle bøger på biblioteksbordet
 // Alle HTML-elementer med class="book-card"
 const books = document.querySelectorAll(".book-card");
@@ -10,16 +12,16 @@ if (books.length > 0) {
   // Går igennem hver bog en ad gangen
   books.forEach(function (book) {
 
-    // Henter bogens link fra href-attributten i HTML
-    const bookLink = book.getAttribute("href");
+    // const bookName = book.dataset.book;
+    const bookName = book.dataset.book;
 
     // Hvis en bog mangler href, springes den over
     // Det forhindrer fejl i localStorage
-    if (!bookLink) return;
+    if (!bookName) return;
 
     // Laver en unik localStorage-nøgle til hver bog
     // Fx "visited-identitet"
-    const storageKey = "visited-" + bookLink;
+    const storageKey = "visited-" + bookName;
 
     // Tjekker om bogen allerede er besøgt
     // localStorage.getItem() henter den gemte værdi fra browseren
@@ -29,11 +31,11 @@ if (books.length > 0) {
     // Derfor tilføjes class="visited", så CSS kan vise markeringen
     if (isVisited === "true") {
       book.classList.add("visited");
+      console.log("MARKERER:", storageKey);
     }
 
     // Når brugeren klikker på en bog, køres denne funktion
     book.addEventListener("click", function () {
-
       // Gemmer bogen som besøgt i browserens localStorage
       localStorage.setItem(storageKey, "true");
     });
