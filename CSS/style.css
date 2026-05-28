@@ -241,6 +241,22 @@ html, body {
   
     cursor: pointer;
   }
+  .velkommenfortsaet-knap {
+    position: absolute;
+    left: 40px;
+    right: 40px;
+    bottom: 230px;
+    height: 96px;
+    border-radius: 9px;
+    border: 2px solid var(--color-brown);
+    background: var(--color-pale-yellow);
+    color: var(--color-burgundy);
+    font-family: var(--font-body);
+    font-size: var(--text-button);
+    font-weight: 700;
+  
+    cursor: pointer;
+  }
 
 /* ------------------------------------------- BØGERNE TÆT PÅ -----------------------------------------------------*/
 
@@ -339,15 +355,20 @@ html, body {
 }
 
 .stor-knap {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 96px;
   background: var(--color-pale-yellow);
   color: var(--color-burgundy);
+  border: 2px solid var(--color-burgundy);
+  border-radius: 9px;
+  font-family: var(--font-body);
+  font-size: var(--text-button);
+  font-weight: 700;
   text-decoration: none;
-  font-family: var(--font-heading);
-  font-size: 20px;
-  padding: 22px;
-  border-radius: 8px;
-  margin-top: 35px;
+  cursor: pointer;
 }
 
 .favorit-knap {
@@ -1043,17 +1064,21 @@ html, body {
 }
 
 .end-journey {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  padding: 14px 0px;
-  margin-top: 45px;
+  height: 50px;
   background: var(--color-pale-yellow);
-  border-radius: 8px;
   color: var(--color-burgundy);
-  text-align: center;
+  border: 2px solid var(--color-burgundy);
+  border-radius: 9px;
+  font-family: var(--font-body);
+  font-size: var(--text-bodytext);
+  font-weight: 700;
   text-decoration: none;
-  font-size: var(--text-button);
-  font-family: var(--text-bodytext);
+  cursor: pointer;
+  margin-top: 65px;
 }
 
 
@@ -1198,6 +1223,12 @@ audio{
     transform: translateY(0);
     filter: blur(0);
   }
+
+}
+.velkommenfortsaet-knap {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: magicFade 2.2s ease forwards;
 }
 
 body {
@@ -1213,6 +1244,8 @@ body {
     opacity: 1;
  
   }
+
+
 }
 .phone {
   position: relative;
