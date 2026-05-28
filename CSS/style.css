@@ -1182,3 +1182,17 @@ audio{
     filter: blur(0);
   }
 }
+
+body {
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
