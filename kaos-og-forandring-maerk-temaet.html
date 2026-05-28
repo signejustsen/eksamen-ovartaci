@@ -6,6 +6,7 @@
   <title>Mærk temaet</title>
   <link rel="stylesheet" href="CSS/style.css">
 </head>
+
 <body class="udforsk-body">
 
   <main class="phone">
@@ -22,21 +23,25 @@
     <h2>Kunne du ændre én ting ved dig selv,<br>hvad ville det være?</h2>
 
     <p>Vælg dit svar</p>
-  <div class="svar-knapper">
-        <a href="dit-svar-er-gemt.html">
-            <button>Jeg ville forstå mig selv bedre</button><br> 
-        </a>
 
-        <a href="dit-svar-er-gemt.html">
-            <button>Jeg ville skabe en ny version af mig selv</button><br>
-        </a>
+    <div class="svar-knapper">
 
-        <a href="dit-svar-er-gemt.html">
-            <button>Jeg ville være fri af kroppens grænser</button>
-        </a>
-       
-  </div>
+      <button class="answer-btn" data-identity="soegende">
+        Jeg ville forstå mig selv bedre
+      </button>
+    
+      <button class="answer-btn" data-identity="skabende">
+        Jeg ville skabe en ny version af mig selv
+      </button>
+    
+      <button class="answer-btn" data-identity="droemmende">
+        Jeg ville være fri af kroppens grænser
+      </button>
+    
+    </div>
+
   </main>
 
+  <script src="JS/spoergsmaal.js"></script>
 </body>
 </html>

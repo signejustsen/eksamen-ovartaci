@@ -6,6 +6,7 @@
   <title>Mærk temaet</title>
   <link rel="stylesheet" href="CSS/style.css">
 </head>
+
 <body class="udforsk-body">
 
   <main class="phone">
@@ -24,19 +25,24 @@
     <p>Vælg dit svar</p>
 
     <div class="svar-knapper">
-        <a href="dit-svar-er-gemt.html">
-            <button>Jeg leder stadig efter svaret</button><br> 
-        </a>
 
-        <a href="dit-svar-er-gemt.html">
-            <button>Jeg former mig selv gennem det, jeg skaber</button><br>
-        </a>
-
-        <a href="dit-svar-er-gemt.html">
-            <button>Jeg føler, man kan være mange personer på én gang</button>
-        </a>
+      <button class="answer-btn" data-identity="soegende">
+        Jeg leder stadig efter svaret
+      </button>
+    
+      <button class="answer-btn" data-identity="skabende">
+        Jeg former mig selv gennem det, jeg skaber
+      </button>
+    
+      <button class="answer-btn" data-identity="droemmende">
+        Jeg føler, man kan være mange personer på én gang
+      </button>
+    
     </div>
+
   </main>
 
+
+  <script src="JS/spoergsmaal.js"></script>
 </body>
 </html>

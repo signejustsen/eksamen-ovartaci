@@ -34,7 +34,47 @@
 
   </main>
 
+<!-- LOADING SIDE SKIFTER EFTER 4 SEKUNDER - SKAL KUN TILFØJES HER ELLERS SKER DET PÅ ALLE SIDER -->
+  
+  <script>
 
-  <script src="JS/timer.js"></script>
+    setTimeout(() => {
+    
+      const scores = JSON.parse(localStorage.getItem("identityScores")) || {
+        soegende: 0,
+        skabende: 0,
+        droemmende: 0
+      };
+    
+      let result = "droemmende";
+      let highestScore = scores.droemmende;
+    
+      if (scores.soegende > highestScore) {
+        result = "soegende";
+        highestScore = scores.soegende;
+      }
+    
+      if (scores.skabende > highestScore) {
+        result = "skabende";
+        highestScore = scores.skabende;
+      }
+    
+      if (result === "droemmende") {
+        window.location.href = "din-identitet.html";
+      }
+    
+      if (result === "soegende") {
+        window.location.href = "din-identitet2.html";
+      }
+    
+      if (result === "skabende") {
+        window.location.href = "din-identitet3.html";
+      }
+    
+    }, 4000);
+    
+    </script>
+
+  <script src="JS/spoergsmaal.js"></script>
 </body>
 </html>

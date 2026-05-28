@@ -6,6 +6,7 @@
   <title>Mærk temaet</title>
   <link rel="stylesheet" href="CSS/style.css">
 </head>
+
 <body class="udforsk-body">
 
   <main class="phone">
@@ -22,21 +23,25 @@
     <h2>Hvorfor tror du,<br>mennesker drømmer?</h2>
 
     <p>Vælg dit svar</p>
+
     <div class="svar-knapper">
-        <a href="dit-svar-er-gemt.html">
-            <button>for at forstå sig selv</button><br> 
-        </a>
 
-        <a href="dit-svar-er-gemt.html">
-            <button>For at skabe nye idéer</button><br>
-        </a>
-
-        <a href="dit-svar-er-gemt.html">
-            <button>For at flygte til andre verdener</button>
-        </a>
-       
+      <button class="answer-btn" data-identity="soegende">
+        For at forstå sig selv
+      </button>
+    
+      <button class="answer-btn" data-identity="skabende">
+        For at skabe nye idéer
+      </button>
+    
+      <button class="answer-btn" data-identity="droemmende">
+        For at flygte til andre verdener
+      </button>
+    
     </div>
+
   </main>
 
+  <script src="JS/spoergsmaal.js"></script>
 </body>
 </html>
