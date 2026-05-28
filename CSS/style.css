@@ -280,6 +280,79 @@ html, body {
 
 /* Signe css */
 
+/* STYLING AF FAVORITSIDE */
+
+.favorit-body {
+  display: flex;
+  justify-content: center;
+}
+
+.favorit-side {
+  width: 390px;
+  min-height: 844px;
+  background-image: url("img/bogbaggrund.png");
+  background-size: cover;
+  background-position: center;
+  color: var(--color-pale-yellow);
+  position: relative;
+  text-align: center;
+  padding: 32px;
+  box-sizing: border-box;
+}
+
+.favorit-side h1 {
+  font-family: var(--font-heading);
+  font-size: var(--text-buttonl);
+  line-height: 1.05;
+  margin-top: 70px;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin: 25px 0;
+}
+
+.divider span {
+  width: 95px;
+  height: 1px;
+  background: var(--color-pale-yellow);
+}
+
+.divider img {
+  width: 34px;
+}
+
+.favorit-liste {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  flex-wrap: wrap;
+  min-height: 250px;
+  margin-top: 20px;
+}
+
+.favorit-liste img {
+  width: 85px;
+}
+
+.stor-knap {
+  display: block;
+  background: var(--color-pale-yellow);
+  color: var(--color-burgundy);
+  text-decoration: none;
+  font-family: var(--font-heading);
+  font-size: 20px;
+  padding: 22px;
+  border-radius: 8px;
+  margin-top: 35px;
+}
+
+
+/* STYLING AF MÆRK TEMAET OG SE VÆRK */
+
 .udforsk-body h1, .udforsk-body h2, .udforsk-body p{
   display: flex;
   justify-content: center;
@@ -335,17 +408,18 @@ html, body {
 
 .svar-knapper button {
     width: 320px;
-    height: 90px;
+    height: 80px;
     background-color: var(--color-pale-yellow);
     color: var(--color-burgundy);
     border: none;
     border-radius: 8px;
-    font-size: var(--text-bodytext);
-    font-family: var(--font-heading);
+    font-size: 20px;
+    font-family: var(--font-body);
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0 28px;
+    cursor: pointer;
 }
 
 .svar-knapper {
@@ -355,6 +429,24 @@ html, body {
     gap: 28px;
     width: 100%;
 }
+
+.refleksion-spm {
+  font-family: var(--font-body);
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--color-cream);
+}
+
+.refleksion-tekst {
+  font-family: var(--font-body);
+  font-size: 20px;
+  text-align: center;
+  color: var(--color-cream);
+}
+
+
+/* STYLING AF HØR SIDEN */
 
 .hoer-body {
   display: flex;
@@ -440,6 +532,9 @@ html, body {
   width: 100%;
   margin-top: 40px;
 }
+
+
+/* STYLING AF KNAPPER */
 
 .bund-knapper a {
   background-color: var(--color-pale-yellow);
@@ -713,16 +808,13 @@ html, body {
 .valg-side .choice-button {
   width: 100%;
   height: 60px;
-
   background-color: var(--color-pale-yellow);
   color: var(--color-burgundy);
   border: none;
   border-radius: 7px;
-
   display: grid;
   grid-template-columns: 60px 1fr;
   align-items: center;
-
   padding: 0 24px;
   box-sizing: border-box;
   font-weight: 600;
@@ -1051,7 +1143,7 @@ html, body {
   pointer-events: none;
 }
 
-/*------------------------ audio player -----------------------------------*/
+/*-------------------------------------- audio player ------------------------------------------------*/
 
 .custom-audio{
   width:300px;
@@ -1066,4 +1158,27 @@ audio{
   border: var(--color-burgundy) 3px solid;
 
   padding:10px;
+}
+
+
+/*-------------------------------------- animation ----------------------------------------------------*/
+
+.magi-tekst {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: magicFade 2.2s ease forwards;
+}
+
+@keyframes magicFade {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+    filter: blur(6px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
 }
