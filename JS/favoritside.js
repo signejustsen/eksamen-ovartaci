@@ -1,5 +1,25 @@
 "use strict";
 
+// FAVORIT OVERLAY
+// Finder overlay i HTML
+const favoritOverlay = document.querySelector("#favoritOverlay");
+
+// Lytter efter klik på favoritKnap
+favoritKnap.addEventListener("click", function () {
+
+// Viser overlay ved at tilføje klassen "vis"
+  favoritOverlay.classList.add("vis");
+
+// Sætter en timeout function
+  setTimeout(function () {
+    
+    // Overlay forsvinder ved at fjerne klassen "vis" efter 1,6 sekunder
+    favoritOverlay.classList.remove("vis");
+  }, 1600);
+});
+
+
+// GEMMER BOG I LOCALSTORAGE OG FØJER TIL FAVORITLISTE
 // Finder hjertet på siden
 const favoritKnap = document.querySelector(".favorit-knap");
 
@@ -32,6 +52,7 @@ if (favoritKnap) {
 }
 
 
+// 
 // Finder containeren på favoritsiden
 const favoritListe = document.querySelector("#favoritListe");
 
