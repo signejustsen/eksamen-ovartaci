@@ -1,27 +1,14 @@
 "use strict";
 
-// FAVORIT OVERLAY
-// Finder overlay i HTML
-const favoritOverlay = document.querySelector("#favoritOverlay");
 
-// Lytter efter klik på favoritKnap
-favoritKnap.addEventListener("click", function () {
+// GEMMER BOG I LOCALSTORAGE OG FØJER TIL FAVORITLISTE + OVERLAY
 
-// Viser overlay ved at tilføje klassen "vis"
-  favoritOverlay.classList.add("vis");
-
-// Sætter en timeout function
-  setTimeout(function () {
-    
-    // Overlay forsvinder ved at fjerne klassen "vis" efter 1,6 sekunder
-    favoritOverlay.classList.remove("vis");
-  }, 1600);
-});
-
-
-// GEMMER BOG I LOCALSTORAGE OG FØJER TIL FAVORITLISTE
 // Finder hjertet på siden
 const favoritKnap = document.querySelector(".favorit-knap");
+
+// Finder overlayet i HTML
+const favoritOverlay = document.querySelector("#favoritOverlay");
+
 
 // HVIS der findes et hjerte på siden
 if (favoritKnap) {
@@ -48,11 +35,23 @@ if (favoritKnap) {
 
     // Ændrer hjertet, så brugeren kan se at bogen er gemt
     favoritKnap.textContent = "♥";
+
+    // Viser overlay
+    if (favoritOverlay) {
+    favoritOverlay.classList.add("vis");
+    
+    // Sætter timeout funktion
+    setTimeout(function () {
+        // Overlay forsvinder ved at fjerne klassen "vis" efter 1,6 sekunder
+        favoritOverlay.classList.remove("vis");
+    }, 1600);
+    }
   });
 }
 
 
-// 
+// VISER FAVORITBØGERNE PÅ FAVORITSIDEN
+
 // Finder containeren på favoritsiden
 const favoritListe = document.querySelector("#favoritListe");
 
