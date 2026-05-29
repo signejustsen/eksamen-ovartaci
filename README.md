@@ -12,6 +12,12 @@ Gennem seks temaer guides brugeren gennem en personlig rejse. Undervejs besvarer
 
 Formålet er at skabe en mere sanselig, engagerende og brugercentreret museumsoplevelse, hvor den digitale løsning understøtter refleksion og emotionel involvering.
 
+## Oplevelsesdesign
+
+Projektet benytter baggrundslyd, animationer og visuelle effekter for at understøtte den stemningsfulde oplevelse af Ovartacis univers.
+
+Brugerens valg påvirker løbende oplevelsen gennem localStorage, hvilket skaber et personligt forløb og en individuel afslutning.
+
 ---
 
 # Projektstruktur
@@ -117,7 +123,7 @@ img: "../img/identitet1.png"
 | visited-status | Boolean/String |
 | favoritværker  | Array          |
 
-Arrays anvendes til samlinger af data, objekter bruges til at organisere relaterede værdier, og localStorage anvendes til lagring af brugerens valg.
+Arrays anvendes til samlinger af data, objekter bruges til at organisere relaterede værdier, og localStorage anvendes til lagring af brugerens valg. Boolean anvendes blandt andet til at registrere, om en bog tidligere er blevet besøgt.
 
 ---
 
@@ -161,13 +167,25 @@ Favoritværker gemmes lokalt, så brugeren kan vende tilbage til dem senere i op
 
 Når brugeren starter oplevelsen forfra, slettes relevante data fra localStorage, så en ny personlig rejse kan påbegyndes.
 
+## Dynamisk brugeroplevelse
+
+Projektet anvender et identitetssystem baseret på brugerens svar gennem oplevelsen.
+
+Hvert svar giver point til én af tre identiteter:
+
+- Den Søgende
+- Den Skabende
+- Den Drømmende
+
+Pointene gemmes i localStorage og anvendes til at beregne brugerens endelige identitet ved afslutningen af oplevelsen.
+
+Dette betyder, at forskellige brugere kan opnå forskellige resultater baseret på deres individuelle valg.
+
 ---
 
 # Anvendte JavaScript-teknologier
 
-Projektet anvender vanilla JavaScript.
-
-Følgende teknologier og metoder er anvendt:
+Projektet anvender vanilla JavaScript til at skabe interaktivitet, navigation og personalisering af brugeroplevelsen.
 
 ## DOM-manipulation
 
@@ -176,15 +194,13 @@ document.querySelector()
 document.querySelectorAll()
 ```
 
-Anvendes til at finde og manipulere HTML-elementer.
-
 ## EventListeners
 
 ```javascript
 button.addEventListener("click")
 ```
 
-Anvendes til at registrere brugerens handlinger.
+Anvendes til at registrere brugerens handlinger, såsom klik på svarmuligheder, bøger og navigationsknapper.
 
 ## Arrays og objekter
 
@@ -193,7 +209,7 @@ const books = []
 const scores = {}
 ```
 
-Bruges til organisering af data.
+Bruges til organisering og strukturering af data, eksempelvis bogdata og identitetsscores.
 
 ## JSON
 
@@ -209,9 +225,36 @@ Anvendes til lagring og hentning af objekter i localStorage.
 ```javascript
 localStorage.setItem()
 localStorage.getItem()
+localStorage.removeItem()
 ```
 
-Anvendes til at gemme brugerens valg og progression mellem sider.
+Anvendes til at gemme brugerens valg, besøgte bøger, favoritter og identitetsscores mellem siderne.
+
+## Dataset
+
+```javascript
+button.dataset.identity
+book.dataset.book
+```
+
+Anvendes til at knytte data direkte til HTML-elementer og identificere hvilke svar eller bøger brugeren interagerer med.
+
+## Loops
+
+```javascript
+forEach()
+```
+
+Anvendes til at gennemgå flere elementer på én gang, eksempelvis svarknapper og bøger.
+
+## CSS-klasser
+
+```javascript
+classList.add()
+classList.remove()
+```
+
+Anvendes til dynamisk at ændre sidens udseende, eksempelvis ved visning af checkmarks på besøgte bøger.
 
 ## Side-navigation
 
@@ -219,9 +262,39 @@ Anvendes til at gemme brugerens valg og progression mellem sider.
 window.location.href
 ```
 
-Anvendes til at sende brugeren videre gennem oplevelsen.
+Anvendes til at sende brugeren videre mellem siderne og styre flowet gennem oplevelsen.
 
----
+## Kommentarer i koden
+For at gøre koden mere overskuelig og lettere at vedligeholde er der løbende blevet anvendt kommentarer i både HTML, CSS og JavaScript.
+Kommentarerne beskriver blandt andet:
+
+- Formålet med funktioner og variabler
+- Håndtering af localStorage
+- Navigationsflow mellem sider
+- Opbygning af datastrukturer
+- Styling og layout i CSS
+- Interaktioner og brugerhandlinger
+
+Eksempel fra JavaScript:
+
+```javascript
+// Når brugeren klikker på et svar
+button.addEventListener("click", function() {
+
+  // Finder hvilken identitet svaret giver point til
+  const identity = button.dataset.identity;
+
+});
+```
+Eksempel fra bog.js:
+
+```javascript
+// Finder alle elementer med class="book-card"
+const books = document.querySelectorAll(".book-card");
+
+// Gemmer bogen som besøgt i localStorage
+localStorage.setItem(storageKey, "true");
+```
 
 # Kodeeksempel 1 – Gem brugerens svar
 
@@ -286,6 +359,9 @@ Når brugeren vælger at starte oplevelsen forfra, slettes tidligere valg, point
 # GitHub-samarbejde
 
 Projektet er udviklet gennem GitHub.
+Gruppemedlemmerne arbejdede løbende på projektet gennem et fælles GitHub-repository.
+
+Projektet blev primært udviklet på main-branchen og anvendte ikke pull requests eller separate branches. Til gengæld blev der arbejdet med hyppige og beskrivende commits.
 
 GitHub blev anvendt til:
 
