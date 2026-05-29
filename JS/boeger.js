@@ -4,33 +4,33 @@
 
 const books = [
   {
-    id: "identitet",
-    titel: "Identitet",
-    img: "../img/identitet1.png",
+    id: "identitet", //string
+    titel: "Identitet", //string
+    img: "../img/identitet1.png", //string
   },
   {
-    id: "kaos",
-    titel: "Kaos og forandring",
-    img: "../img/kaosogforandring1.png",
+    id: "kaos", //string
+    titel: "Kaos og forandring", //string
+    img: "../img/kaosogforandring1.png", //string
   },
   {
-    id: "fantasi",
-    titel: "Fantasiens verden",
-    img: "../img/fantasiensverden1.png",
+    id: "fantasi", //string
+    titel: "Fantasiens verden", //string
+    img: "../img/fantasiensverden1.png", //string
   },
   {
-    id: "hospitalet",
-    titel: "Livet på hospitalet",
-    img: "../img/livetpaahospitalet1.png",
+    id: "hospitalet", //string
+    titel: "Livet på hospitalet", //string
+    img: "../img/livetpaahospitalet1.png", //string
   },
   {
-    id: "kunst",
-    titel: "Kunst som frirum",
-    img: "../img/kunstsomfrirum1.png",
+    id: "kunst", //string
+    titel: "Kunst som frirum", //string
+    img: "../img/kunstsomfrirum1.png", //string
   },
   {
-    id: "univers",
-    titel: "Det indre univers",
-    img: "../img/detindreunivers1.png",
+    id: "univers", //string
+    titel: "Det indre univers", //string
+    img: "../img/detindreunivers1.png", //string
   },
 ];

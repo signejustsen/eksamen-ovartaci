@@ -14,9 +14,9 @@ answerButtons.forEach(function(button) {
 
     // Henter tidligere scores fra localStorage
     let scores = JSON.parse(localStorage.getItem("identityScores")) || {
-      soegende: 0,
-      skabende: 0,
-      droemmende: 0
+      soegende: 0, // number
+      skabende: 0, // number
+      droemmende: 0 // number
     };
 
     // Giver +1 point til den valgte identitet
