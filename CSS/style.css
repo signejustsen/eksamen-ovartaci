@@ -178,6 +178,30 @@ html, body {
     overflow: hidden;
   }
 
+  .velkommen {
+    position: relative;
+    overflow: hidden;
+    background: radial-gradient(circle at center, #7a1d2a 0%, #5F1722 55%, #2b060c 100%);
+  }
+  
+  .velkommen .divider {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .velkommen .star-icon {
+    animation: sparkleStar 2.5s ease-in-out infinite;
+  }
+  
+  .magi-tekst {
+    text-shadow: 0 0 12px rgba(251, 230, 188, 0.25);
+  }
+  
+  .velkommenfortsaet-knap {
+    box-shadow: 0 0 22px rgba(251, 230, 188, 0.35);
+    animation: magicFade 2.2s ease forwards, glowButton 3s ease-in-out infinite;
+  }
+  
   .tilbage-knap {
     position: absolute;
     top: 30px;
@@ -1500,32 +1524,6 @@ p,
 
 
 /* Animation på velkommen siden */
-
-.velkommen {
-  position: relative;
-  overflow: hidden;
-  background: radial-gradient(circle at center, #7a1d2a 0%, #5F1722 55%, #2b060c 100%);
-}
-
-
-
-.velkommen .divider {
-  position: relative;
-  z-index: 2;
-}
-
-.velkommen .star-icon {
-  animation: sparkleStar 2.5s ease-in-out infinite;
-}
-
-.magi-tekst {
-  text-shadow: 0 0 12px rgba(251, 230, 188, 0.25);
-}
-
-.velkommenfortsaet-knap {
-  box-shadow: 0 0 22px rgba(251, 230, 188, 0.35);
-  animation: magicFade 2.2s ease forwards, glowButton 3s ease-in-out infinite;
-}
 
 @keyframes glowButton {
   0%, 100% {
