@@ -201,7 +201,7 @@ html, body {
     box-shadow: 0 0 22px rgba(251, 230, 188, 0.35);
     animation: magicFade 2.2s ease forwards, glowButton 3s ease-in-out infinite;
   }
-  
+
   .tilbage-knap {
     position: absolute;
     top: 30px;
@@ -1459,7 +1459,7 @@ p,
 
 .replay img {
   width: 70px;
-  animation: slowRotate 5s ease-in-out infinite;
+  animation: slowRotate 3s ease-in-out infinite;
 }
 
 @keyframes floatBook {
@@ -1518,7 +1518,7 @@ p,
   }
 
   50% {
-    transform: rotate(-18deg);
+    transform: rotate(-50deg);
   }
 }
 
