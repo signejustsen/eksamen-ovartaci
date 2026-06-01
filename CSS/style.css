@@ -166,6 +166,7 @@ html, body {
   font-size: var(--text-bodytext);
   line-height: 1.25;
   padding-top: 75px;
+  font-weight: 700;
   color: var(--color-pale-yellow);
 }
 
@@ -1037,6 +1038,7 @@ html, body {
 
 /*-------------------------------------------- Biblotek side ------------------------------------------------------------*/
 
+
 .phone.bibliotek-side {
   background-image: url("../img/bibbaggrund.png");
   background-size: cover;
@@ -1087,11 +1089,11 @@ html, body {
 }
 
 .book-content {
-  padding: 130px 25px 30px;
+  padding: 220px 25px 30px;
 }
 
 .book-grid {
-  padding-top: 120px;
+  margin-top: 0;
   display: grid;
   grid-template-columns: repeat(3, 100px);
   column-gap: 20px;
@@ -1137,7 +1139,12 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  position: absolute;
+  left: 25px;
+  right: 25px;
+  bottom: 20px;
+  width: auto;
+  margin-top: 0;
   height: 50px;
   background: var(--color-pale-yellow);
   color: var(--color-burgundy);
@@ -1148,8 +1155,16 @@ html, body {
   font-weight: 700;
   text-decoration: none;
   cursor: pointer;
-  margin-top: 65px;
+  
 }
+
+.book-content {
+  position: relative;
+  height: 100%;
+  padding: 220px 25px 30px;
+  box-sizing: border-box;
+}
+
 
 
 
@@ -1439,6 +1454,7 @@ p,
   z-index: 4;
 }
 
+
 .sparkles span:nth-child(1) { left: 40%; animation-delay: 0s; }
 .sparkles span:nth-child(2) { left: 50%; animation-delay: .5s; }
 .sparkles span:nth-child(3) { left: 60%; animation-delay: 1s; }
@@ -1529,6 +1545,7 @@ p,
 .choice-button,
 .stor-knap,
 .answer-btn,
+.forside-start-knap
 .bund-knapper a,
 .velkommenfortsaet-knap,
 .start-knap,
