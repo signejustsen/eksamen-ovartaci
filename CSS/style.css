@@ -216,6 +216,7 @@ html, body {
     font-size: 40px;
     line-height: 1;
     cursor: pointer;
+    border: var(--color-burgundy) 3px solid;
   }
   
   .velkommen-content {
@@ -481,6 +482,7 @@ html, body {
   align-items: center;
   text-decoration: none;
   font-size: var(--text-button);
+  border: var(--color-burgundy) 3px solid;
 }
 
 .billede-placeholder img {
@@ -528,6 +530,7 @@ html, body {
     justify-content: center;
     padding: 0 28px;
     cursor: pointer;
+    font-weight: 700;
 }
 
 .svar-knapper {
@@ -833,19 +836,17 @@ html, body {
   position: absolute;
   top: 32px;
   left: 26px;
-
   width: 42px;
   height: 42px;
   border-radius: 50%;
-
   background-color: var(--color-cream);
   color: var(--color-burgundy);
   display: flex;
   justify-content: center;
   align-items: center;
-
   text-decoration: none;
   font-size: 30px;
+  border: var(--color-burgundy) 3px solid;
   line-height: 1;
 }
 
@@ -1523,7 +1524,18 @@ p,
 }
 
 
-/* Animation på velkommen siden */
+/* Animation og glow på velkommen siden samt alle knapper */
+
+.choice-button,
+.stor-knap,
+.answer-btn,
+.bund-knapper a,
+.velkommenfortsaet-knap,
+.start-knap,
+.end-journey,
+.replay {
+  animation: magicFade 2.2s ease forwards, glowButton 3s ease-in-out infinite;
+}
 
 @keyframes glowButton {
   0%, 100% {
