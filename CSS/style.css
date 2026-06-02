@@ -127,18 +127,23 @@ html, body {
 /* START-knap */
 .start-knap {
   position: absolute;
-    left: 40px;
-    right: 40px;
-    bottom: 30px;
-    height: 96px;
-    border-radius: 9px;
-    border: 2px solid var(--color-brown);
-    background: var(--color-pale-yellow);
-    color: var(--color-burgundy);
-    font-family: var(--font-body);
-    font-size: var(--text-button);
-    font-weight: 700;
-    cursor: pointer;
+  left: 33px;
+  right: 33px;
+  bottom: 40px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9px;
+  border: 2px solid var(--color-brown);
+  background: var(--color-pale-yellow);
+  color: var(--color-burgundy);
+  font-family: var(--font-body);
+  font-size: var(--text-button);
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  animation: magicFade 2.2s ease forwards, glowButton 3s ease-in-out infinite;
 }
 
 .afslut-knap {
