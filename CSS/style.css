@@ -1145,7 +1145,7 @@ html, body {
   text-align: center;
   text-decoration: none;
   font-size: var(--text-button);
-  font-family: var(--text-bodytext);
+  font-family: var(--font-body);
 }
 
 .end-journey {
