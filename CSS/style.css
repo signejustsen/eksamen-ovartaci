@@ -1562,8 +1562,7 @@ p,
 .bund-knapper a,
 .velkommenfortsaet-knap,
 .start-knap,
-.end-journey,
-.replay {
+.end-journey{
   animation: magicFade 2.2s ease forwards, glowButton 3s ease-in-out infinite;
 }
 
