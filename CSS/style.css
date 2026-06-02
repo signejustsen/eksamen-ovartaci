@@ -460,6 +460,15 @@ html, body {
   color: var(--color-pale-yellow);
 }
 
+.favorit-link {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 999;
+  color: var(--color-pale-yellow);
+  font-size: 36px;
+  text-decoration: none;
+}
 
 /* STYLING AF MÆRK TEMAET OG SE VÆRK */
 
