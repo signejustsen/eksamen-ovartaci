@@ -217,7 +217,6 @@ html, body {
     font-size: 40px;
     line-height: 1;
     cursor: pointer;
-    border: var(--color-burgundy) 3px solid;
   }
   
   .velkommen-content {
@@ -476,14 +475,13 @@ html, body {
   width: 42px;
   height: 42px;
   border-radius: 50%;
-  background-color: var(--color-pale-yellow);
+  background-color: var(--color-cream);
   color: var(--color-burgundy);
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
   font-size: var(--text-button);
-  border: var(--color-burgundy) 3px solid;
 }
 
 .billede-placeholder img {
@@ -638,22 +636,15 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-
   width: 320px;
   height: 80px;
-
   background: var(--color-pale-yellow);
   color: var(--color-burgundy);
-
-  border: 2px solid var(--color-brown);
   border-radius: 9px;
-
   font-family: var(--font-body);
   font-size: var(--text-button);
   font-weight: 700;
-
   text-decoration: none;
-
   cursor: pointer;
 }
 
@@ -847,7 +838,6 @@ html, body {
   align-items: center;
   text-decoration: none;
   font-size: 30px;
-  border: var(--color-burgundy) 3px solid;
   line-height: 1;
 }
 
@@ -1071,7 +1061,6 @@ html, body {
   align-items: center;
   justify-content: center;
   font-size: 28px;
- border: var(--color-burgundy) 3px solid;
 }
 
 
