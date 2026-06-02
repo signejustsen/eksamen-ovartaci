@@ -197,11 +197,6 @@ html, body {
   .magi-tekst {
     text-shadow: 0 0 12px rgba(251, 230, 188, 0.25);
   }
-  
-  .velkommenfortsaet-knap {
-    box-shadow: 0 0 22px rgba(251, 230, 188, 0.35);
-    animation: magicFade 2.2s ease forwards, glowButton 3s ease-in-out infinite;
-  }
 
   .tilbage-knap {
     position: absolute;
@@ -245,12 +240,11 @@ html, body {
   
   .velkommen-content p {
     text-align: center;
-    padding-top: 50px;
     font-family: var(--font-body);
-    font-size: var(--text-bodytext);  
+    font-size: var(--text-bodytext);
     color: var(--color-cream);
     padding: 20px;
-    line-height: 1.5;
+    line-height: 1.35;
   }
   
   .fortsaet-knap {
@@ -269,12 +263,16 @@ html, body {
   
     cursor: pointer;
   }
+
   .velkommenfortsaet-knap {
     position: absolute;
     left: 40px;
     right: 40px;
-    bottom: 230px;
-    height: 96px;
+    bottom: 250px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 9px;
     border: 2px solid var(--color-brown);
     background: var(--color-pale-yellow);
@@ -282,8 +280,9 @@ html, body {
     font-family: var(--font-body);
     font-size: var(--text-button);
     font-weight: 700;
-  
+    text-decoration: none;
     cursor: pointer;
+    animation: magicFade 2.2s ease forwards, glowButton 3s ease-in-out infinite;
   }
 
 /* ------------------------------------------- BØGERNE TÆT PÅ -----------------------------------------------------*/
