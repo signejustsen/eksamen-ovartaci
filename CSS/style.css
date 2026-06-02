@@ -899,6 +899,11 @@ html, body {
   text-align: center;
   margin: 0 0 44px;
 }
+.back-button,
+.tilbage,
+.tilbage-knap {
+  z-index: 50;
+}
 
 /* knapper */
 .valg-side .choice-buttons {
@@ -1551,7 +1556,7 @@ p,
 .choice-button,
 .stor-knap,
 .answer-btn,
-.forside-start-knap
+.forside-start-knap,
 .bund-knapper a,
 .velkommenfortsaet-knap,
 .start-knap,
@@ -1575,3 +1580,4 @@ p,
   position: relative;
   overflow: hidden;
 }
+
