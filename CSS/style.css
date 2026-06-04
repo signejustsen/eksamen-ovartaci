@@ -754,6 +754,25 @@ html, body {
   display: block;
 }
 
+.loading-text {
+  text-align: center;
+  color: var(--color-cream);
+  font-family: var(--font-body);
+  margin: 20px 35px;
+  animation: magicFade 2s ease forwards;
+}
+
+.loading-text h2 {
+  font-size: var(--text-mediumtitle);
+  margin-bottom: 12px;
+}
+
+.loading-text p {
+  font-size: var(--text-bodytext);
+  line-height: 1.35;
+  margin: 0;
+}
+
 /* Place bottom divider at the bottom of the phone */
 /* Gør divideren helt centreret i bunden */
 .bottom-divider {
@@ -773,7 +792,7 @@ html, body {
 .loading-video {
   width: 100px;
   display: block;
-  margin: 260px auto 0;
+  margin: 200px auto 0;
 }
 
 
