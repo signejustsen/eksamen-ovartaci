@@ -31,3 +31,12 @@ answerButtons.forEach(function(button) {
   });
 
 });
+
+const startButton = document.getElementById("startExperience");
+
+startButton.addEventListener("click", function() {
+
+  localStorage.removeItem("identityScores");
+  localStorage.removeItem("finalIdentity");
+
+});
