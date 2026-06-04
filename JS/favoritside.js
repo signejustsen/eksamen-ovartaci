@@ -3,10 +3,9 @@
 
 // GEMMER BOG I LOCALSTORAGE OG FØJER TIL FAVORITLISTE + OVERLAY
 
-// Finder hjertet på siden
+
 const favoritKnap = document.querySelector(".favorit-knap");
 
-// Finder overlayet i HTML
 const favoritOverlay = document.querySelector("#favoritOverlay");
 
 
@@ -46,6 +45,15 @@ if (favoritKnap) {
         favoritOverlay.classList.remove("vis");
     }, 1600);
     }
+  });
+}
+
+// Nulstiller favoritliste, når der bliver startet forfra
+const replayKnap = document.querySelector(".replay");
+
+if (replayKnap) {
+  replayKnap.addEventListener("click", function () {
+    localStorage.removeItem("favoritBooks");
   });
 }
 
